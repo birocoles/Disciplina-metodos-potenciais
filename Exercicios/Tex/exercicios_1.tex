@@ -1,0 +1,405 @@
+\documentclass[10pt,a4paper,fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\title{Disciplina M\'{e}todos Potenciais}
+\author{Vanderlei C. Oliveira Jr.}
+\date{}
+
+\doublespace
+
+\begin{document}
+
+\begin{flushleft}
+\begin{huge}
+\emph{Disciplina M\'{e}todos Potenciais}
+\end{huge}
+\end{flushleft}
+\begin{flushleft}
+Vanderlei C. Oliveira Jr. \\
+Observat\'{o}rio Nacional - MCTI \\
+Rio de Janeiro - 2014
+\end{flushleft}
+
+\hrulefill
+
+\tableofcontents
+
+\hrulefill
+
+%%%%%%%%%%%%%% Funções harmônicas %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Funç\~{o}es harm\^{o}nicas}
+
+%%%%% Exercício 11 %%%%%
+\subsection{Exerc\'{i}cio}
+
+Seja $f(x,y,z)$ dada por
+\begin{equation}
+f(x,y,z) = - \iiint \limits_{v} \mathbf{m}(x',y',z')^{\intercal}
+                                \left( \nabla \frac{1}{r} \right)
+                                 d v \quad
+\label{eq:ex11-func-f}
+\end{equation}
+em que $r = \sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$ \'{e} a dist\^{a}ncia entre o ponto $(x,y,z)$
+e o ponto $(x',y',z')$ dentro do volume de integraç\~{a}o $v$ (Figura \ref{fig:fig1}). Os vetores
+$\mathbf{m}(x',y',z')$ e $\nabla \frac{1}{r}$ s\~{a}o dados por
+\begin{equation}
+\mathbf{m}(x',y',z') =
+\left[
+\begin{array}{c}
+m_{x}(x',y',z') \\
+m_{y}(x',y',z') \\
+m_{z}(x',y',z')
+\end{array}
+\right]_{3 \times 1}
+\label{eq:ex11-mag-vec}
+\end{equation}
+e
+\begin{equation}
+\nabla \frac{1}{r} =
+\left[
+\begin{array}{c}
+\frac{\partial}{\partial x} \frac{1}{r} \\
+\frac{\partial}{\partial y} \frac{1}{r} \\
+\frac{\partial}{\partial z} \frac{1}{r}
+\end{array}
+\right]_{3 \times 1} \quad .
+\label{eq:ex11-grad-invr}
+\end{equation}
+Mostre que a funç\~{a}o $f(x,y,z)$ (Eq. \ref{eq:ex11-func-f}) \'{e} harm\^{o}nica e, portanto, satisfaz
+a equaç\~{a}o de Laplace em coordenadas Cartesianas
+\begin{equation}
+\frac{\partial^{2} f(x,y,z)}{\partial x^{2}} +
+\frac{\partial^{2} f(x,y,z)}{\partial y^{2}} +
+\frac{\partial^{2} f(x,y,z)}{\partial z^{2}} = 0 \quad .
+\label{eq:ex11-Laplace}
+\end{equation}
+
+%Figuras ==>
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1]{Figs/Fig1.png}
+    \caption{Dist\^{a}ncia $r = \sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$ entre
+        um ponto $(x,y,z)$ e outro ponto $(x',y',z')$ de um sistema de coordenadas Cartesianas. O ponto
+        $(x',y',z')$ est\'{a} dentro do volume de integraç\~{a}o $v$.}   
+    \label{fig:fig1}
+\end{figure}
+%<== Figuras
+
+%%%%%%%%%%%%%% Harmônicos esféricos %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Harm\^{o}nicos esf\'{e}ricos}
+
+%%%%% Exercício 2.1 %%%%%
+\subsection{Exerc\'{i}cio}
+
+%%%%% Exercício 2.1.1 %%%%%
+\subsubsection{}
+
+Sejam $f_{1}(r)$ e $f_{2}(r)$ duas funç\~{o}es dadas por
+\begin{equation}
+f_{1}(r) = r^{n}
+\label{eq:ex211-r^}
+\end{equation}
+e
+\begin{equation}
+f_{2}(r) = r^{-(n+1)} \quad ,
+\label{eq:ex211-r_}
+\end{equation}
+em que $n \geqslant 0$ \'{e} um n\'{u}mero inteiro e $r > 0$ \'{e} um n\'{u}mero real. Mostre que $f_{1}(r)$ 
+(Eq. \ref{eq:ex211-r^}) e $f_{2}(r)$ (Eq. \ref{eq:ex211-r_}) s\~{a}o soluç\~{o}es da equaç\~{a}o
+diferencial
+\begin{equation}
+r^{2} \: \frac{d^{2} f(r)}{d r^{2}} + 2 \: r \: \frac{d \, f(r)}{d r} - n(n+1) \: f(r) = 0 \quad .
+\label{eq:ex211-eqdif-r}
+\end{equation}
+
+%%%%% Exercício 2.1.2 %%%%%
+\subsubsection{}
+
+Sejam $h_{1}(\lambda)$ e $h_{2}(\lambda)$ duas funç\~{o}es dadas por
+\begin{equation}
+h_{1}(\lambda) = cos(m \lambda)
+\label{eq:ex212-cos}
+\end{equation}
+e
+\begin{equation}
+h_{2}(\lambda) = sen(m \lambda) \quad ,
+\label{eq:ex212-sen}
+\end{equation}
+em que $m \geqslant 0$ \'{e} um n\'{u}mero inteiro e $\lambda$ \'{e} um n\'{u}mero real. Mostre que
+$h_{1}(\lambda)$ (Eq. \ref{eq:ex212-cos}) e $h_{2}(\lambda)$ (Eq. \ref{eq:ex212-sen}) s\~{a}o soluç\~{o}es 
+da equaç\~{a}o diferencial
+\begin{equation}
+\frac{d^{2} h(\lambda)}{d \lambda^{2}} + \lambda^{2} \frac{d \, h(\lambda)}{d \lambda} = 0 \quad .
+\label{eq:ex212-eqdif-lamb}
+\end{equation}
+
+%%%%% Exercício 2.1.3 %%%%%
+\subsubsection{}
+A equaç\~{a}o diferencial
+\begin{equation}
+sen \theta \, g''(\theta) + 
+cos \theta \, g'(\theta) + 
+\left[ n(n+1) \, sen \theta - \dfrac{m^{2}}{sen \theta} \right] = 0
+\label{eq:ex213-eq-diff-Legendre-theta}
+\end{equation}
+tem como soluç\~{a}o os polin\^{o}mios associados de Legendre
+\begin{equation}
+g(\theta) = P_{nm}(cos\theta) \quad .
+\label{eq:ex213-g-theta}
+\end{equation}
+Nestas Equaç\~{o}es, $n$ e $m$ s\~{a}o inteiros maiores ou iguais a zero (sendo $m$ menor ou igual a $n$), $g'(\theta)$ \'{e} a primeira derivada e $g''(\theta)$ \'{e} a segunda derivada de $g(\theta)$. Os inteiros $n$ e $m$ s\~{a}o, respectivamente, o grau e a ordem do polin\^{o}mio $P_{nm}(cos\theta)$. Por conveni\^{e}ncia, estas Equaç\~{o}es s\~{a}o comumente transformadas por mudança de vari\'{a}veis  utilizando a relaç\~{a}o $t = cos{\theta}$. Dessa forma,
+\begin{equation}
+\begin{array}{l}
+g(\theta) = \overline{g}(t) \\
+g'(\theta) = -\overline{g}'(t) \, sen \theta \\
+g''(\theta) = \overline{g}''(t) \, sen^{2} \theta - \overline{g}'(t) \, cos \theta \quad .
+\end{array}
+\label{eq:ex213-g-t}
+\end{equation}
+em que $\overline{g}(t) = P_{nm}(t)$, com primeira e segunda derivadas $\overline{g}'(t)$ e $\overline{g}''(t)$, respectivamente. Substituindo as Equaç\~{o}es \ref{eq:ex213-g-t} na equaç\~{a}o diferencial \ref{eq:ex213-eq-diff-Legendre-theta}, dividindo o resultado por $sen \theta$ e utilizando a relaç\~{a}o $sen^{2} \theta = 1 - t^2$ temos que
+\begin{equation}
+(1 - t^2) \, \overline{g}''(t) - 2 \, t \, \overline{g}'(t) +
+\left[ n(n+1) - \frac{m^{2}}{1 - t^2} \right] = 0 \quad .
+\label{eq:ex213-eq-diff-Legendre-t}
+\end{equation}
+A funç\~{a}o $\overline{g}(t) = P_{nm}(t)$ (polin\^{o}mio associado de Legendre escrito em funç\~{a}o da viari\'{a}vel $t$) que satisfaz a Equaç\~{a}o \ref{eq:ex213-eq-diff-Legendre-t} pode ser dada por
+\begin{equation}
+P_{nm}(t) = \frac{1}{2^{n} \, n!} \, (1 - t^{2})^{m/2} \,
+\frac{d^{n+m}}{d \, t^{n+m}}(t^{2} - 1)^{n} \quad .
+\label{eq:ex213-pnm-t}
+\end{equation}
+Por exemplo,
+\begin{equation}
+\begin{split}
+P_{11}(t) & = \frac{(1 - t^{2})^{1/2}}{2} \, \frac{d^{2}}{d \, t^{2}}(t^{2} - 1) \\
+& = \sqrt{1 - t^{2}} \\
+& = sen \theta \quad ,
+\end{split}
+\label{eq:ex213-p11-t}
+\end{equation}
+ou
+\begin{equation}
+\begin{split}
+P_{21}(t) & = \frac{(1 - t^{2})^{1/2}}{2^{2} \, 2!} \, \frac{d^{3}}{d \, t^{3}}(t^{2} - 1)^{2} \\
+& = \frac{\sqrt{1 - t^{2}}}{8} \, (16 \, t + 8 \, t) \\
+& = 3 \, t \, \sqrt{1 - t^{2}} \\
+& = 3 \, sen \theta \, cos \theta \quad .
+\end{split}
+\label{eq:ex213-p21-t}
+\end{equation}
+No caso particular em que $m = 0$, n\~{a}o h\'{a} ra\'{i}zes $\sqrt{1 - t^{2}}$, $P_{nm}(t)$ \'{e} representado simplesmente por $P_{n}(t)$ e \'{e} denominado polin\^{o}mio de Legendre. A partir da Equação \ref{eq:ex213-pnm-t}, os polin\^{o}mios de Legendre podem ser escritos como
+\begin{equation}
+P_{n}(t) = \frac{1}{2^{n} \, n!} \frac{d^{n}}{d \, t^{n}}(t^{2} - 1)^{n} \quad .
+\label{eq:ex213-pn-t}
+\end{equation}
+Alternativamente, os polin\^{o}mios de Legendre (\ref{eq:ex213-pn-t}) a partir do grau $n = 2$ podem ser obtidos pela f\'{o}rmula recursiva
+\begin{equation}
+P_{n}(t) = - \, \frac{n - 1}{n} \, P_{n-2}(t) + \frac{2n - 1}{n} \, t \, P_{n-1}(t) \quad ,
+\label{eq:ex213-pn-recursiva}
+\end{equation}
+em que $P_{2}(t)$ \'{e} obtido utilizando $P_{0}(t)$ e $P_{1}(t)$, $P_{3}(t)$ \'{e} obtido utilizando $P_{1}(t)$ e $P_{2}(t)$, etc.
+Sendo assim, determine os polin\^{o}mios de Legendre de grau $n = 0$ at\'{e} $n = 5$ utilizando a Equação \ref{eq:ex213-pn-t}. Em seguida, determine os polin\^{o}mios de grau $n = 2$ at\'{e} $n = 5$ utilizando a f\'{o}rmula recursiva (Eq. \ref{eq:ex213-pn-recursiva}). Por \'{u}ltimo, faça um gr\'{a}fico dos polin\^{o}mios de Legendre $P_{n}(t)$ de ordem $n = 0$ at\'{e} $n = 5$ para $t$ no intervalo $[-1,1]$.
+
+%%%%% Exercício 2.1.4 %%%%%
+\subsubsection{}
+
+Seja $V(r,\theta,\lambda)$ uma funç\~{a}o harm\^{o}nica que depende das coordenadas esf\'{e}ricas $r$, $\theta$ e $\lambda$ (Fig. \ref{fig:fig2}). Esta funç\~{a}o satisfaz a equaç\~{a}o de Laplace em coordenadas esf\'{e}ricas, que pode ser escrita como
+\begin{equation}
+r^{2} \, \frac{\partial^{2} \, V}{\partial \, r^{2}} +
+2 \, r \, \frac{\partial \, V}{\partial \, r} +
+\frac{\partial^{2} \, V}{\partial \, \theta^{2}} +
+cot \theta \, \frac{\partial \, V}{\partial \, \theta} +
+\frac{1}{sen^{2} \theta} \, \frac{\partial^{2} \, V}{\partial \, \lambda^{2}} = 0 \quad .
+\label{eq:ex214-eq-Laplace-esferica}
+\end{equation}
+
+%Figuras ==>
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1]{Figs/Fig2.png}
+    \caption{Sistema de coordenadas Cartesianas $(x,y,z)$ e esf\'{e}ricas $(r,\theta,\lambda)$.}
+    \label{fig:fig2}
+\end{figure}
+%<== Figuras
+
+\medskip
+
+A equação de Laplace \ref{eq:ex214-eq-Laplace-esferica} pode ser resolvida pelo m\'{e}todo de separaç\~{a}o de vari\'{a}veis. Este m\'{e}todo consiste em supor que a funç\~{a}o $V(r,\theta,\lambda)$ pode ser reescrita como o produto entre tr\^{e}s funç\~{o}es independentes:
+\begin{equation}
+V(r,\theta,\lambda) = f(r) \, g(\theta) \, h(\lambda) \quad .
+\label{eq:ex214-v-fhg}
+\end{equation}
+O pr\'{o}ximo passo consiste em determinar as funç\~{o}es $f(r)$, $g(\theta)$ e $h(\lambda)$. Para tanto, basta substituir a funç\~{a}o $V(r,\theta,\lambda)$ dada pela Equaç\~{a}o \ref{eq:ex214-v-fhg} na equaç\~{a}o de Laplace \ref{eq:ex214-eq-Laplace-esferica}. Esta substituiç\~{a}o nos leva a conclus\~{a}o de que a funç\~{a}o $f(r)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial \ref{eq:ex211-eqdif-r}. Tal como visto anteriormente, as funç\~{o}es $f_{1}(r)$ (Eq. \ref{eq:ex211-r^}) e $f_{2}(r)$ (Eq. \ref{eq:ex211-r_}) s\~{a}o soluç\~{o}es desta equaç\~{a}o. Neste caso, mostra-se que a funç\~{a}o $V(r,\theta,\lambda)$ pode ser escrita como:
+\begin{equation}
+V(r,\theta,\lambda) = r^{n} \, g(\theta) \, h(\lambda) \quad ,
+\label{eq:ex214-v-f1gh}
+\end{equation}
+ou
+\begin{equation}
+V(r,\theta,\lambda) = \frac{1}{r^{(n+1)}} \, g(\theta) \, h(\lambda) \quad .
+\label{eq:ex214-v-f2gh}
+\end{equation}
+Estas funç\~{o}es s\~{a}o denominadas harm\^{o}nicos esf\'{e}ricos s\'{o}lidos. De forma an\'{a}loga, mostra-se que a funç\~{a}o $h(\lambda)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial \ref{eq:ex212-eqdif-lamb}, que possui as soluç\~{o}es $h_{1}(\lambda)$ (Eq. \ref{eq:ex212-cos}) e $h_{2}(\lambda)$ (Eq. \ref{eq:ex212-sen}), e que a funç\~{a}o $g(\theta)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial \ref{eq:ex213-eq-diff-Legendre-theta}, cuja soluç\~{a}o \'{e} dada pelos polin\^{o}mios associados de Legendre $P_{nm}(cos\theta)$ (Eq. \ref{eq:ex213-g-theta}). Os polin\^{o}mios associados de Legendre $P_{nm}(cos\theta)$ podem ser obtidos pela Equação \ref{eq:ex213-pnm-t}, em que $t = cos \theta$. Por fim, \'{e} poss\'{i}vel mostrar que a funç\~{a}o $V(r,\theta,\lambda)$ pode ser escrita de duas formas:
+\begin{equation}
+V_{e}(r,\theta,\lambda) = \sum_{n=0}^{\infty} r^{n} \, 
+Y_{n}(\theta, \lambda) \quad ,
+\label{eq:ex214-ve}
+\end{equation}
+ou
+\begin{equation}
+V_{i}(r,\theta,\lambda) = \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \,
+Y_{n}(\theta, \lambda) \quad ,
+\label{eq:ex214-vi}
+\end{equation}
+em que 
+\begin{equation}
+Y_{n}(\theta, \lambda) = \sum_{m=0}^{n} 
+\left[ 
+A_{nm} \, R_{nm}(\theta, \lambda) +
+B_{nm} \, S_{nm}(\theta, \lambda)
+\right] \quad ,
+\label{eq:ex214-Yn}
+\end{equation}
+sendo $A_{nm}$ e $B_{nm}$ constantes e as funç\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$ dadas por
+\begin{equation}
+R_{nm}(\theta, \lambda) = P_{nm}(cos\theta) \, cos(m \, \lambda)
+\label{eq:ex214-rnm}
+\end{equation}
+e
+\begin{equation}
+S_{nm}(\theta, \lambda) = P_{nm}(cos\theta) \, sen(m \, \lambda) \quad .
+\label{eq:ex214-snm}
+\end{equation}
+As funç\~{o}es $Y_{n}(\theta, \lambda)$ (Eq. \ref{eq:ex214-Yn}) s\~{a}o denominadas harm\^{o}nicos (esf\'{e}ricos) de superf\'{i}cie.
+
+As constantes $A_{nm}$ e $B_{nm}$ (Eq. \ref{eq:ex214-Yn}) podem ser determinadas por meio das relaç\~{o}es de ortogonalidade entre as
+funç\~{o}es $R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e $S_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-snm}). Para tanto, vamos
+considerar $r = 1$ nas equaç\~{o}es \ref{eq:ex214-ve} e \ref{eq:ex214-vi}. Dessa maneira, estas equaç\~{o}es s\~{a}o iguais a uma funç\~{a}o 
+$f(\theta,\lambda)$ que pode ser escrita em funç\~{a}o dos harm\^{o}nicos de superf\'{i}cie (Eq. \ref{eq:ex214-Yn}) da seguinte forma
+\begin{equation}
+\begin{split}
+f(\theta,\lambda) & = \sum_{n=0}^{\infty} 
+Y_{n}(\theta, \lambda) \\
+& = \sum_{n=0}^{\infty} \,
+\sum_{m=0}^{n} \left[ 
+A_{nm} \, R_{nm}(\theta, \lambda) +
+B_{nm} \, S_{nm}(\theta, \lambda)
+\right] \: .
+\end{split}
+\label{eq:ex214-f}
+\end{equation}
+De acordo com as relaç\~{o}es de ortogonalidade entre as funç\~{o}es $R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e 
+$S_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-snm}),
+\begin{equation}
+\iint \limits_{\sigma}
+R_{nm}(\theta, \lambda) \, R_{op}(\theta, \lambda) \, d \sigma  = 0
+\label{eq:ex214-ortog-rnm}
+\end{equation}
+e
+\begin{equation}
+\iint \limits_{\sigma}
+S_{nm}(\theta, \lambda) \, S_{op}(\theta, \lambda) \, d \sigma = 0
+\label{eq:ex214-ortog-snm}
+\end{equation}
+para o caso em que $nm \neq op$. J\'{a} a integral
+\begin{equation}
+\iint \limits_{\sigma}
+R_{nm}(\theta, \lambda) \, S_{op}(\theta, \lambda) \, d \sigma  = 0
+\label{eq:ex214-ortog-rnm-snm}
+\end{equation}
+\'{e} sempre zero, independente dos valores de $o$ e $p$. Nestas Equaç\~{o}es, 
+$\iint \limits_{\sigma} = \int_{\lambda = 0}^{2\pi} \, \int_{\theta = 0}^{\pi}$ e $d \sigma = sen\theta \, d\theta d\lambda$.
+Por outro lado, estas integrais s\~{a}o diferentes de zero quando $nm = op$. Neste caso,
+\begin{equation}
+\iint \limits_{\sigma}
+R_{n0}^{2}(\theta, \lambda) \, d \sigma  = \dfrac{4 \, \pi}{2 \, n + 1}
+\label{eq:ex214-ortog-rn02}
+\end{equation}
+e
+\begin{equation}
+\left.
+\begin{array}{l}
+\iint \limits_{\sigma}
+R_{nm}^{2}(\theta, \lambda) \, d \sigma \\
+\iint \limits_{\sigma}
+S_{nm}^{2}(\theta, \lambda) \, d \sigma
+\end{array}
+\right \} =
+\dfrac{2 \, \pi}{2 \, n + 1} \dfrac{(n - m)!}{(n + m)!} \: .
+\label{eq:ex214-ortog-rnm2-snm2}
+\end{equation}
+Observe que estas integrais (Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-snm}, \ref{eq:ex214-ortog-rnm-snm},
+\ref{eq:ex214-ortog-rn02} e \ref{eq:ex214-ortog-rnm2-snm2}) s\~{a}o avaliadas sobre a superf\'{i}cie $\sigma$ de uma esfera
+com raio unit\'{a}rio.
+
+Agora, para determinar as constantes $A_{nm}$ (Eqs. \ref{eq:ex214-Yn} e \ref{eq:ex214-f}), basta multiplicar os 
+dois lados da Equação \ref{eq:ex214-f} por $R_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-rnm}), integrar o resultado sobre 
+a superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as relaç\~{o}es de ortogonalidade 
+(Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-snm}, \ref{eq:ex214-ortog-rnm-snm}, \ref{eq:ex214-ortog-rn02} e 
+\ref{eq:ex214-ortog-rnm2-snm2}):
+\begin{equation}
+\begin{split}
+R_{op}(\theta,\lambda) \, f(\theta,\lambda)
+& = R_{op}(\theta,\lambda) \, \sum_{n=0}^{\infty} \,
+\sum_{m=0}^{n} \left[ 
+A_{nm} \, R_{nm}(\theta, \lambda) +
+B_{nm} \, S_{nm}(\theta, \lambda)
+\right] \\
+& \begin{array}{r} =
+\left[ A_{00} \, R_{op}(\theta,\lambda) \, R_{00}(\theta, \lambda) \right. + \\
+B_{00} \, R_{op}(\theta,\lambda) \, S_{00}(\theta, \lambda) + \\
+A_{10} \, R_{op}(\theta,\lambda) \, R_{10}(\theta, \lambda) + \\
+B_{10} \, R_{op}(\theta,\lambda) \, S_{10}(\theta, \lambda) + \\
+A_{11} \, R_{op}(\theta,\lambda) \, R_{11}(\theta, \lambda) + \\
+B_{11} \, R_{op}(\theta,\lambda) \, S_{11}(\theta, \lambda) + \\
+\vdots \quad \quad \quad \quad \quad \\
+A_{op} \, R_{op}(\theta,\lambda) \, R_{op}(\theta, \lambda) + \\
+B_{op} \, R_{op}(\theta,\lambda) \, S_{op}(\theta, \lambda) + \\
+\vdots \quad \quad \quad \quad \quad \\
+A_{nn} \, R_{op}(\theta,\lambda) \, R_{nn}(\theta, \lambda) + \\
+\left. B_{nn} \, R_{op}(\theta,\lambda) \, S_{nn}(\theta, \lambda) \right]
+\end{array} \\
+& = \left[ \, \hdots + A_{op} \, R_{op}^{2}(\theta,\lambda) + \hdots \, \right]
+\end{split}
+\label{eq:ex214-int-Anm-desenvolv}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\iint \limits_{\sigma} 
+f(\theta,\lambda) \, R_{op}(\theta,\lambda) \, d \sigma
+& = \left[ \, \hdots + 
+\iint \limits_{\sigma} A_{op} \, R_{op}^{2}(\theta,\lambda) \, d \sigma
++ \hdots \, \right] \\
+& = \left[ \, \hdots + 
+A_{op} \, \iint \limits_{\sigma} R_{op}^{2}(\theta,\lambda) \, d \sigma
++ \hdots \, \right] \\
+& = 
+A_{op} \, \iint \limits_{\sigma} R_{op}^{2}(\theta,\lambda) \, d \sigma
+\end{split} \: .
+\label{eq:ex214-int-Anm}
+\end{equation}
+
+De forma an\'{a}loga, para determinar as constantes $B_{nm}$ (Eqs. \ref{eq:ex214-Yn} e \ref{eq:ex214-f}), basta multiplicar os 
+dois lados da Equação \ref{eq:ex214-f} por $S_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-snm}), integrar o resultado sobre a 
+superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as relaç\~{o}es de ortogonalidade 
+(Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-snm}, \ref{eq:ex214-ortog-rnm-snm}, \ref{eq:ex214-ortog-rn02} e 
+\ref{eq:ex214-ortog-rnm2-snm2}):
+\begin{equation}
+\iint \limits_{\sigma} 
+f(\theta,\lambda) \, S_{op}(\theta,\lambda) \, d \sigma
+= B_{op} \, \iint \limits_{\sigma} S_{op}^{2}(\theta,\lambda) \, d \sigma \: .
+\label{eq:ex214-int-Bnm}
+\end{equation}
+A partir das Equaç\~{o}es \ref{eq:ex214-int-Anm} e \ref{eq:ex214-int-Bnm} chegamos a...
+
+\end{document}
