@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Vanderlei C. Oliveira Jr.}
+\begin{document}
+
+\begin{center}
+\begin{large}
+\textbf{Esquema iterativo para transformar coordenadas Cartesianas 
+geocêntricas $(x,y,z)$ em coordenadas geodésicas $(h,\phi,\lambda)$
+referidas ao elipsoide WSG84}
+\end{large}
+\end{center}
+
+\bigskip
+\bigskip
+
+\underline{Coordenadas Cartesianas geocêntricas}
+
+\begin{itemize}
+\item $x = X_{0} \, m$ 
+\item $y = Y_{0} \, m$
+\item $z = Z_{0} \, m$
+\end{itemize}
+
+\bigskip
+
+\underline{Elipsoide de refer\^{e}ncia WGS84}:
+
+\begin{itemize}
+\item Semi-eixo maior: $a = 6378137.0 \, m$
+\item Achatamento: $f = 1/298.257223563$
+\item Semi-eixo menor: $b = a \, (1 - f) \, m$
+\item $1^{a}$ excentricidade: $e = \dfrac{a^{2} - b^{2}}{a^{2}}$
+\end{itemize}
+
+\bigskip
+
+\underline{Esquema iterativo}
+
+\begin{enumerate}
+
+\item $p = \sqrt{X_{0}^{2} + Y_{0}^{2}}$
+
+\item $\phi_{1} = tan^{-1} \left( \dfrac{Z_{0}}{p (1 - e^{2})} 
+                           \right)$
+
+\item $N_{1} = \dfrac{a^{2}}{\sqrt{\left( a \, cos\phi_{1} \right)^{2} + 
+                                   \left( b \, sen\phi_{1} \right)^{2}}}$
+
+\item $h_{1} = \dfrac{p}{cos\phi_{1}} - N_{1}$
+
+\item $h_{0} = h_{1}$, $\phi_{0} = \phi_{1}$ e $N_{0} = N_{1}$
+
+\item $i = 0$ e $ITMAX = 5$ (por exemplo)
+
+\item Enquanto $i < ITMAX$
+
+\begin{enumerate}
+
+\item $\phi_{1} = tan^{-1} \left( \dfrac{Z_{0}}{p} 
+                           \left( 1 - \dfrac{e^{2} N_{1}}{N_{1} + h_{1}} 
+                           \right)^{-1}
+                           \right)$
+\item Etapa 3
+
+\item Etapa 4
+
+\item Etapa 5
+
+\item $i \leftarrow i + 1$
+
+\end{enumerate}
+
+\item $\lambda = tan^{-1} \left( \dfrac{Y_{0}}{X_{0}} \right)$
+
+\end{enumerate}
+
+\end{document}
