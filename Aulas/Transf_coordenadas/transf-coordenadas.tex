@@ -12,7 +12,7 @@
 \begin{large}
 \textbf{Esquema iterativo para transformar coordenadas Cartesianas 
 geocêntricas $(x,y,z)$ em coordenadas geodésicas $(h,\phi,\lambda)$
-referidas ao elipsoide WSG84}
+referidas ao elipsoide WGS84}
 \end{large}
 \end{center}
 
@@ -79,5 +79,33 @@ referidas ao elipsoide WSG84}
 \item $\lambda = tan^{-1} \left( \dfrac{Y_{0}}{X_{0}} \right)$
 
 \end{enumerate}
+
+\bigskip
+
+\underline{Observaç\~{o}es}
+
+\begin{itemize}
+
+\item Os \^{a}ngulos devem estar em radiano
+
+\item Para testar a sua implementaç\~{a}o:
+
+\begin{itemize}
+
+\item Defina coordenadas geod\'{e}sicas
+      $h = H$, $\phi = \Phi$ e $\lambda = \Lambda$
+
+\item Calcule as coordenadas Cartesianas $x = X_{0}$, 
+      $y = Y_{0}$ e $z = Z_{0}$
+
+\item Utilize o esquema iterativo descrito acima para
+      estimar o valor das coordenadas geod\'{e}sicas 
+      $H$, $\Phi$ e $\Lambda$ que voc\^{e} definiu
+      previamente
+
+
+\end{itemize}
+
+\end{itemize}
 
 \end{document}
