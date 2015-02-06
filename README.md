@@ -1,23 +1,23 @@
 # Métodos Potenciais
 
-## Disciplina eletiva oferecida no programa de pós-graduação em 
+Disciplina eletiva oferecida no programa de pós-graduação em 
 geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
-## Responsável: [Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)
+**Responsável**: [Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)
 
 ## Ementa
 
-**Introdução**
+###Introdução
 
-* Elementos de Teoria do Potencial
+#### Elementos de Teoria do Potencial
 
-* Harmônicos Esféricos
+#### Harmônicos Esféricos
 
-**Gravimetria**
+###Gravimetria
 
-* Campo de gravidade
+#### Campo de gravidade
 
-* Terra Verdadeira
+#### Terra Verdadeira
 
 > Potencial Gravitacional
 
@@ -31,7 +31,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 > Gravidade
 
-* Terra Normal
+#### Terra Normal
 
 > Esferopotencial Gravitacional
 
@@ -45,11 +45,11 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 > Gravidade Normal
 
-* Potencial Anômalo (Perturbador)
+#### Potencial Anômalo (Perturbador)
 
-* Distúrbio da Gravidade
+#### Distúrbio da Gravidade
 
-* Anomalia da Gravidade
+#### Anomalia da Gravidade
 
 > Reduções gravimétricas
 
@@ -67,13 +67,13 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 >> Separação Regional-Residual
 
-* Gradiometria da Gravidade
+#### Gradiometria da Gravidade
 
-**Magnetometria**
+###Magnetometria
 
-* Campo Geomagnético
+#### Campo Geomagnético
 
-* Terra Verdadeira
+#### Terra Verdadeira
 
 > Campo Principal (Núcleo)
 
@@ -81,27 +81,27 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 > Campo Externo
 
-* Modelos Globais
+#### Modelos Globais
 
 > IGRF
 
 > Comprehensive Models
 
-* Anomalias Magnéticas
+#### Anomalias Magnéticas
 
 > Remoção do Campo Externo
 
 > Separação Regional-Residual
 
-**Interpretação**
+###Interpretação
 
-* Separação Regional-Residual
+#### Separação Regional-Residual
 
 > Ajuste Polinomial Simples
 
 > Polinômio Robusto
 
-* Modelagem Direta
+#### Modelagem Direta
 
 > Diques
 
@@ -117,21 +117,21 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 >> Corpos Complexos
 
-* Transformações no domínio do número de onda
+#### Transformações no domínio do número de onda
 
-* Camada Equivalente
+#### Camada Equivalente
 
-* Deconvolução de Euler
+#### Deconvolução de Euler
 
-* Sinal Analítico
+#### Sinal Analítico
 
-* Redução ao Pólo
+#### Redução ao Pólo
 
-* Determinação da direção de magnetização
+#### Determinação da direção de magnetização
 
-* Massa Total Anômala
+#### Massa Total Anômala
 
-* Tensor Gradiente Gravitacional
+#### Tensor Gradiente Gravitacional
 
 > Invariantes
 
@@ -139,6 +139,6 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 > Estimativa do centro de massa
 
-* Relação de Poisson
+#### Relação de Poisson
 
-* Inversão
+#### Inversão
