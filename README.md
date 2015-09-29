@@ -167,4 +167,21 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * Jekeli, C., 2012, Geometric Reference Systems in Geodesy. Ohio State University, Division of Geodetic Science,
     School of Earth Sciences, url: http://hdl.handle.net/1811/51274
+    
+## Links úteis
+
+* [International Centre for Global Earth Models - ICGEM](http://icgem.gfz-potsdam.de/ICGEM/)
+
+* [National Centers for Environmental Information - NCEI](https://www.ncei.noaa.gov/)
+
+* [Australian Governments' Geoscience Portal](Australian Governments' Geoscience Portal)
+
+* [British Geological Survey](http://geomag.bgs.ac.uk/)
+
+* [Instituto Brasileiro de Geografia e Estatística - Geociências](http://www.ibge.gov.br/home/mapa_site/mapa_site.php#geociencias)
+
+* [Serviço Geológico do Brasil - CPRM](http://www.cprm.gov.br/)
+
+* [Fatiando a Terra](http://www.fatiando.org/)
+
 
