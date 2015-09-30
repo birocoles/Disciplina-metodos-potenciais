@@ -154,9 +154,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.9315833"
+     inkscape:zoom="4.6905336"
      inkscape:cx="141.73228"
-     inkscape:cy="141.73228"
+     inkscape:cy="88.582672"
      inkscape:document-units="cm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -174,7 +174,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -219,7 +219,7 @@
        sodipodi:cy="149.23676"
        sodipodi:rx="85.278152"
        sodipodi:ry="67.028625"
-       d="m 229.56879,149.23676 a 85.278152,67.028625 0 1 1 -170.556308,0 85.278152,67.028625 0 1 1 170.556308,0 z"
+       d="m 229.56879,149.23676 c 0,37.01888 -38.18033,67.02862 -85.27816,67.02862 -47.097819,0 -85.278148,-30.00974 -85.278148,-67.02862 0,-37.01889 38.180329,-67.02863 85.278148,-67.02863 47.09783,0 85.27816,30.00974 85.27816,67.02863 z"
        transform="matrix(0.99317166,0,0,0.94640166,-2.1661981,834.49857)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.41732287, 0.70866144;stroke-dashoffset:0"
@@ -284,17 +284,6 @@
          id="tspan4041"
          x="125.90798"
          y="895.57922">Z</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="236.13777"
-       y="991.578"
-       id="text4043"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4045"
-         x="236.13777"
-         y="991.578">Y</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -303,7 +292,7 @@
        sodipodi:cy="175.67299"
        sodipodi:rx="1.7055629"
        sodipodi:ry="2.3877883"
-       d="m 18.078968,175.67299 a 1.7055629,2.3877883 0 1 1 -3.411125,0 1.7055629,2.3877883 0 1 1 3.411125,0 z"
+       d="m 18.078968,175.67299 c 0,1.31874 -0.763606,2.38779 -1.705563,2.38779 -0.941956,0 -1.705562,-1.06905 -1.705562,-2.38779 0,-1.31874 0.763606,-2.38779 1.705562,-2.38779 0.941957,0 1.705563,1.06905 1.705563,2.38779 z"
        transform="matrix(1.3254087,0,0,0.94672044,119.43772,809.42327)" />
     <text
        xml:space="preserve"
@@ -317,5 +306,24 @@
          x="127.235"
          y="988.69495"
          style="font-style:italic">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="253.19051"
+       y="988.40894"
+       id="text3897"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3899"
+         x="254.29988"
+         y="988.40894"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">Eixo contido </tspan><tspan
+         sodipodi:role="line"
+         x="253.19051"
+         y="998.40894"
+         id="tspan3905"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"><tspan
+   id="tspan3043"
+   style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">no plano </tspan>XY</tspan></text>
   </g>
 </svg>
