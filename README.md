@@ -182,6 +182,8 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * [Serviço Geológico do Brasil - CPRM](http://www.cprm.gov.br/)
 
+* [Helmholtz-Centre Potsdam - GFZ - Physics of the Earth](http://www.gfz-potsdam.de/en/department/physics-of-the-earth/)
+
 * [Fatiando a Terra](http://www.fatiando.org/)
 
 
