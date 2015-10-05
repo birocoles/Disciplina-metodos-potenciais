@@ -184,6 +184,8 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * [Helmholtz-Centre Potsdam - GFZ - Physics of the Earth](http://www.gfz-potsdam.de/en/department/physics-of-the-earth/)
 
+* [Base de Dados Gravimétricos do Observatório Nacional](http://www.on.br/conteudo/gravimetria.php)
+
 * [Fatiando a Terra](http://www.fatiando.org/)
 
 
