@@ -1,0 +1,14 @@
+\select@language {portuguese}
+\contentsline {section}{\numberline {1}Fun\IeC {\c c}\~{o}es harm\^{o}nicas}{3}
+\contentsline {subsection}{\numberline {1.1}Fun\IeC {\c c}\~{a}o potencial magn\'{e}tico escalar}{3}
+\contentsline {subsubsection}{\numberline {1.1.1}Exerc\'{i}cio}{3}
+\contentsline {section}{\numberline {2}Harm\^{o}nicos esf\'{e}ricos}{5}
+\contentsline {subsection}{\numberline {2.1}Equa\IeC {\c c}\~{o}es diferenciais de $r$}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Exerc\'{i}cio}{5}
+\contentsline {subsection}{\numberline {2.2}Equa\IeC {\c c}\~{o}es diferenciais de $\lambda $}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Exerc\'{i}cio}{6}
+\contentsline {subsection}{\numberline {2.3}Polin\^{o}mios de Legendre}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Exerc\'{i}cio}{8}
+\contentsline {subsubsection}{\numberline {2.3.2}Exerc\'{i}cio}{8}
+\contentsline {subsection}{\numberline {2.4}Equa\IeC {\c c}\~{a}o de Laplace em coordenadas esf\'{e}ricas}{8}
+\contentsline {subsubsection}{\numberline {2.4.1}Exerc\'{i}cio}{14}
