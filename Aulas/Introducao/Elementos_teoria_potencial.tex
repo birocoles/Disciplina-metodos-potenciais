@@ -1,3 +1,4 @@
+
 \documentclass[10pt,a4paper,fleqn]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[portuguese]{babel}
@@ -128,6 +129,8 @@ a equaç\~{a}o de Laplace em coordenadas Cartesianas
     \label{fig:fig1}
 \end{figure}
 %<== Figuras
+
+\clearpage
 
 %%%%%%%%%%%%%% Harmônicos esféricos %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -637,5 +640,42 @@ $\overline{R}_{nm} (\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm-norm}) e $\overline
 \begin{flushleft}
 \emph{\textbf{Expans\~{a}o da funç\~{a}o inverso da dist\^{a}ncia e f\'{o}rmula da decomposiç\~{a}o}}
 \end{flushleft}
+
+Considere dois pontos $P$ e $P^{\,\prime}$ separados por um ângulo $\psi$ e
+uma distância $l$ (Figura \ref{fig:fig3}). De acordo com a lei dos cossenos,
+a distância $l$ é dada por
+\begin{equation}
+l^{2} = r^{2} - r'^{2} - 2 \, r \, r^{\,\prime} \, \text{cos}\psi \: ,
+\label{eq:distancia-l}
+\end{equation}
+em que
+\begin{equation}
+\text{cos}\psi = \text{cos}\theta \, \text{cos}\theta' + 
+                 \text{sen}\theta \, \text{sen}\theta' \, \text{cos}(\lambda' - \lambda) \: .
+\label{eq:cos-psi}
+\end{equation}
+A partir da Equação \ref{eq:distancia-l}, é possível escrever
+\begin{equation}
+\dfrac{1}{l} = \dfrac{1}{\sqrt{r^{2} - r'^{2} - 2 \, r \, r^{\,\prime} \, \text{cos}\psi}} \: .
+\label{eq:inv-distancia-l}
+\end{equation}
+Sabe-se que, se $r' < r$, a função $1/l$ (Eq. \ref{eq:inv-distancia-l}) pode
+ser descrita pela expansão
+\begin{equation}
+\dfrac{1}{l} = \sum_{n=0}^{\infty} \dfrac{r'^{n}}{r^{n+1}} \, P_{n}(\text{cos}\psi) \: ,
+\label{eq:inv-distancia-l-Pn}
+\end{equation}
+em que $P_{n}(t) = P_{n}(\text{cos}\psi)$ (Eqs. \ref{eq:ex213-pn-t} e \ref{eq:ex213-pn-recursiva})
+são os Polinômios de Legendre.
+
+%Figuras ==>
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1]{Figs/Fig3.png}
+    \caption{Dist\^{a}ncia $l$ entre um ponto $P$ e outro ponto $P^{\,\prime}$ 
+    de um sistema de coordenadas esféricas.}   
+    \label{fig:fig3}
+\end{figure}
+%<== Figuras
 
 \end{document}
