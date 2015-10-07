@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{enumerate}
 
 \title{Disciplina M\'{e}todos Potenciais}
 \author{Vanderlei C. Oliveira Jr.}
@@ -60,10 +61,10 @@ Rio de Janeiro - 2015
 
 %%%%%%%%%%%%%% Funções harmônicas %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Funç\~{o}es harm\^{o}nicas}
+\part{Fun\c{c}\~{o}es harm\^{o}nicas}
 
 %%%%% Exercício 11 %%%%%
-\subsection{Funç\~{a}o potencial magn\'{e}tico escalar}
+\section{Fun\c{c}\~{a}o potencial magn\'{e}tico escalar}
 
 Seja $f(x,y,z)$ dada por
 \begin{equation}
@@ -73,7 +74,7 @@ f(x,y,z) = - \iiint \limits_{v} \mathbf{m}(x',y',z')^{\intercal}
 \label{eq:ex11-func-f}
 \end{equation}
 em que $r = \sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$ \'{e} a dist\^{a}ncia entre o ponto $(x,y,z)$
-e o ponto $(x',y',z')$ dentro do volume de integraç\~{a}o $v$ (Figura \ref{fig:fig1}). Os vetores
+e o ponto $(x',y',z')$ dentro do volume de integra\c{c}\~{a}o $v$ (Figura \ref{fig:fig1}). Os vetores
 $\mathbf{m}(x',y',z')$ e $\nabla \frac{1}{r}$ s\~{a}o dados por
 \begin{equation}
 \mathbf{m}(x',y',z') =
@@ -103,10 +104,12 @@ e
 \dotfill
 \end{flushleft}
 
+
+
 \subsubsection{Exerc\'{i}cio}
 
-Mostre que a funç\~{a}o $f(x,y,z)$ (Eq. \ref{eq:ex11-func-f}) \'{e} harm\^{o}nica e, portanto, satisfaz
-a equaç\~{a}o de Laplace em coordenadas Cartesianas
+Mostre que a fun\c{c}\~{a}o $f(x,y,z)$ (Eq. \ref{eq:ex11-func-f}) \'{e} harm\^{o}nica e, portanto, satisfaz
+a equa\c{c}\~{a}o de Laplace em coordenadas Cartesianas
 \begin{equation}
 \frac{\partial^{2} f(x,y,z)}{\partial x^{2}} +
 \frac{\partial^{2} f(x,y,z)}{\partial y^{2}} +
@@ -124,7 +127,7 @@ a equaç\~{a}o de Laplace em coordenadas Cartesianas
     \includegraphics[scale=1]{Figs/Fig1.png}
     \caption{Dist\^{a}ncia $r = \sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$ entre
         um ponto $(x,y,z)$ e outro ponto $(x',y',z')$ de um sistema de coordenadas Cartesianas. O ponto
-        $(x',y',z')$ est\'{a} dentro do volume de integraç\~{a}o $v$.}   
+        $(x',y',z')$ est\'{a} dentro do volume de integra\c{c}\~{a}o $v$.}   
     \label{fig:fig1}
 \end{figure}
 %<== Figuras
@@ -133,12 +136,14 @@ a equaç\~{a}o de Laplace em coordenadas Cartesianas
 
 %%%%%%%%%%%%%% Harmônicos esféricos %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Harm\^{o}nicos esf\'{e}ricos}
+\part{Harm\^{o}nicos esf\'{e}ricos}
 
 %%%%% Exercício 2.1 %%%%%
-\subsection{Equaç\~{o}es diferenciais de $r$}
+\section{Equa\c{c}\~{o}es diferenciais auxiliares}
 
-Sejam $f_{1}(r)$ e $f_{2}(r)$ duas funç\~{o}es dadas por
+\subsection{Equa\c{c}\~{o}es de $r$}
+
+Sejam $f_{1}(r)$ e $f_{2}(r)$ duas fun\c{c}\~{o}es dadas por
 \begin{equation}
 f_{1}(r) = r^{n}
 \label{eq:ex211-r^}
@@ -157,7 +162,7 @@ em que $n \geqslant 0$ \'{e} um n\'{u}mero inteiro e $r > 0$ \'{e} um n\'{u}mero
 \subsubsection{Exerc\'{i}cio}
 
 Mostre que $f_{1}(r)$ (Eq. \ref{eq:ex211-r^}) e $f_{2}(r)$ (Eq. \ref{eq:ex211-r_}) 
-s\~{a}o soluç\~{o}es da equaç\~{a}o diferencial
+s\~{a}o solu\c{c}\~{o}es da equa\c{c}\~{a}o diferencial
 \begin{equation}
 r^{2} \: \frac{d^{2} f(r)}{d r^{2}} + 2 \: r \: \frac{d \, f(r)}{d r} - n(n+1) \: f(r) = 0 \quad .
 \label{eq:ex211-eqdif-r}
@@ -168,16 +173,16 @@ r^{2} \: \frac{d^{2} f(r)}{d r^{2}} + 2 \: r \: \frac{d \, f(r)}{d r} - n(n+1) \
 \end{flushleft}
 
 %%%%% Exercício 2.2 %%%%%
-\subsection{Equaç\~{o}es diferenciais de $\lambda$}
+\subsection{Equa\c{c}\~{o}es de $\lambda$}
 
-Sejam $h_{1}(\lambda)$ e $h_{2}(\lambda)$ duas funç\~{o}es dadas por
+Sejam $h_{1}(\lambda)$ e $h_{2}(\lambda)$ duas fun\c{c}\~{o}es dadas por
 \begin{equation}
-h_{1}(\lambda) = cos(m \lambda)
+h_{1}(\lambda) = \text{cos}(m \lambda)
 \label{eq:ex212-cos}
 \end{equation}
 e
 \begin{equation}
-h_{2}(\lambda) = sen(m \lambda) \quad ,
+h_{2}(\lambda) = \text{sen}(m \lambda) \quad ,
 \label{eq:ex212-sen}
 \end{equation}
 em que $m \geqslant 0$ \'{e} um n\'{u}mero inteiro e $\lambda$ \'{e} um n\'{u}mero real. 
@@ -190,7 +195,7 @@ em que $m \geqslant 0$ \'{e} um n\'{u}mero inteiro e $\lambda$ \'{e} um n\'{u}me
 
 Mostre que
 $h_{1}(\lambda)$ (Eq. \ref{eq:ex212-cos}) e $h_{2}(\lambda)$ (Eq. \ref{eq:ex212-sen}) 
-s\~{a}o soluç\~{o}es da equaç\~{a}o diferencial
+s\~{a}o solu\c{c}\~{o}es da equa\c{c}\~{a}o diferencial
 \begin{equation}
 \frac{d^{2} h(\lambda)}{d \lambda^{2}} + m^{2} h(\lambda) = 0 \quad .
 \label{eq:ex212-eqdif-lamb}
@@ -203,42 +208,42 @@ s\~{a}o soluç\~{o}es da equaç\~{a}o diferencial
 %%%%% Exercício 2.3 %%%%%
 \subsection{Polin\^{o}mios de Legendre}
 
-A equaç\~{a}o diferencial
+A equa\c{c}\~{a}o diferencial
 \begin{equation}
-sen \theta \, g''(\theta) + 
-cos \theta \, g'(\theta) + 
-\left[ n(n+1) \, sen \theta - \dfrac{m^{2}}{sen \theta} \right] = 0
+\text{sen} \theta \, g''(\theta) + 
+\text{cos} \theta \, g'(\theta) + 
+\left[ n(n+1) \, \text{sen} \theta - \dfrac{m^{2}}{\text{sen} \theta} \right] = 0
 \label{eq:ex213-eq-diff-Legendre-theta}
 \end{equation}
-tem como soluç\~{a}o os polin\^{o}mios associados de Legendre
+tem como solu\c{c}\~{a}o os \textit{Polin\^{o}mios associados de Legendre}
 \begin{equation}
-g(\theta) = P_{nm}(cos\theta) \quad .
+g(\theta) = P_{nm}(\text{cos}\theta) \quad .
 \label{eq:ex213-g-theta}
 \end{equation}
-Nestas Equaç\~{o}es, $n$ e $m$ s\~{a}o inteiros maiores ou iguais a zero (sendo $m$ menor ou igual a $n$), 
+Nestas Equa\c{c}\~{o}es, $n$ e $m$ s\~{a}o inteiros maiores ou iguais a zero (sendo $m$ menor ou igual a $n$), 
 $g'(\theta)$ \'{e} a primeira derivada e $g''(\theta)$ \'{e} a segunda derivada de $g(\theta)$. Os inteiros $n$ 
-e $m$ s\~{a}o, respectivamente, o grau e a ordem do polin\^{o}mio $P_{nm}(cos\theta)$. Por conveni\^{e}ncia, 
-estas Equaç\~{o}es s\~{a}o comumente transformadas por mudança de vari\'{a}veis  utilizando a relaç\~{a}o 
-$t = cos{\theta}$. Dessa forma,
+e $m$ s\~{a}o, respectivamente, o grau e a ordem do polin\^{o}mio $P_{nm}(\text{cos}\theta)$. Por conveni\^{e}ncia, 
+estas Equa\c{c}\~{o}es s\~{a}o comumente transformadas por mudan\c{c}a de vari\'{a}veis  utilizando a rela\c{c}\~{a}o 
+$t = \text{cos}(\theta)$. Dessa forma,
 \begin{equation}
 \begin{array}{l}
 g(\theta) = \overline{g}(t) \\
-g'(\theta) = -\overline{g}'(t) \, sen \theta \\
-g''(\theta) = \overline{g}''(t) \, sen^{2} \theta - \overline{g}'(t) \, cos \theta \quad .
+g'(\theta) = -\overline{g}'(t) \, \text{sen} \theta \\
+g''(\theta) = \overline{g}''(t) \, \text{sen}^{2} \theta - \overline{g}'(t) \, \text{cos} \theta \quad .
 \end{array}
 \label{eq:ex213-g-t}
 \end{equation}
 em que $\overline{g}(t) = P_{nm}(t)$, com primeira e segunda derivadas $\overline{g}'(t)$ e $\overline{g}''(t)$, 
-respectivamente. Substituindo as Equaç\~{o}es \ref{eq:ex213-g-t} na equaç\~{a}o diferencial 
-\ref{eq:ex213-eq-diff-Legendre-theta}, dividindo o resultado por $sen \theta$ e utilizando a relaç\~{a}o $sen^{2} 
+respectivamente. Substituindo as Equa\c{c}\~{o}es \ref{eq:ex213-g-t} na equa\c{c}\~{a}o diferencial 
+\ref{eq:ex213-eq-diff-Legendre-theta}, dividindo o resultado por $\text{sen} \theta$ e utilizando a rela\c{c}\~{a}o $\text{sen}^{2} 
 \theta = 1 - t^2$ temos que
 \begin{equation}
 (1 - t^2) \, \overline{g}''(t) - 2 \, t \, \overline{g}'(t) +
 \left[ n(n+1) - \frac{m^{2}}{1 - t^2} \right] = 0 \quad .
 \label{eq:ex213-eq-diff-Legendre-t}
 \end{equation}
-A funç\~{a}o $\overline{g}(t) = P_{nm}(t)$ (polin\^{o}mio associado de Legendre escrito em funç\~{a}o da viari\'{a}vel 
-$t$) que satisfaz a Equaç\~{a}o \ref{eq:ex213-eq-diff-Legendre-t} pode ser dada por
+A fun\c{c}\~{a}o $\overline{g}(t) = P_{nm}(t)$ (polin\^{o}mio associado de Legendre escrito em fun\c{c}\~{a}o da viari\'{a}vel 
+$t$) que satisfaz a Equa\c{c}\~{a}o \ref{eq:ex213-eq-diff-Legendre-t} pode ser dada por
 \begin{equation}
 P_{nm}(t) = \frac{1}{2^{n} \, n!} \, (1 - t^{2})^{m/2} \,
 \frac{d^{n+m}}{d \, t^{n+m}}(t^{2} - 1)^{n} \quad .
@@ -249,7 +254,7 @@ Por exemplo,
 \begin{split}
 P_{11}(t) & = \frac{(1 - t^{2})^{1/2}}{2} \, \frac{d^{2}}{d \, t^{2}}(t^{2} - 1) \\
 & = \sqrt{1 - t^{2}} \\
-& = sen \theta \quad ,
+& = \text{sen} \theta \quad ,
 \end{split}
 \label{eq:ex213-p11-t}
 \end{equation}
@@ -259,12 +264,12 @@ ou
 P_{21}(t) & = \frac{(1 - t^{2})^{1/2}}{2^{2} \, 2!} \, \frac{d^{3}}{d \, t^{3}}(t^{2} - 1)^{2} \\
 & = \frac{\sqrt{1 - t^{2}}}{8} \, (16 \, t + 8 \, t) \\
 & = 3 \, t \, \sqrt{1 - t^{2}} \\
-& = 3 \, sen \theta \, cos \theta \quad .
+& = 3 \, \text{sen} \theta \, \text{cos} \theta \quad .
 \end{split}
 \label{eq:ex213-p21-t}
 \end{equation}
 No caso particular em que $m = 0$, n\~{a}o h\'{a} ra\'{i}zes $\sqrt{1 - t^{2}}$, $P_{nm}(t)$ \'{e} representado 
-simplesmente por $P_{n}(t)$ e \'{e} denominado polin\^{o}mio de Legendre. A partir da Equação \ref{eq:ex213-pnm-t}, 
+simplesmente por $P_{n}(t)$ e \'{e} denominado polin\^{o}mio de Legendre. A partir da Equa\c{c}ão \ref{eq:ex213-pnm-t}, 
 os polin\^{o}mios de Legendre podem ser escritos como
 \begin{equation}
 P_{n}(t) = \frac{1}{2^{n} \, n!} \frac{d^{n}}{d \, t^{n}}(t^{2} - 1)^{n} \quad .
@@ -284,13 +289,23 @@ em que $P_{2}(t)$ \'{e} obtido utilizando $P_{0}(t)$ e $P_{1}(t)$, $P_{3}(t)$ \'
 
 \subsubsection{Exerc\'{i}cio}
 
-Determine os polin\^{o}mios associados de Legendre de grau $n = 0$ e ordem $m = 0$ at\'{e} grau $n = 3$ 
-e ordem $m = 3$ utilizando a Equação \ref{eq:ex213-pnm-t}.
+Determine:
+\begin{enumerate}[(i)]
+
+\item os polin\^{o}mios associados de Legendre de grau $n = 0$ e ordem $m = 0$ at\'{e} grau $n = 3$ 
+e ordem $m = 3$ utilizando a Equa\c{c}ão \ref{eq:ex213-pnm-t}.
+
+\item os polin\^{o}mios de Legendre de grau $n = 0$ at\'{e} $n = 5$ utilizando a Equa\c{c}ão 
+\ref{eq:ex213-pn-t}.
+
+\item os polin\^{o}mios de Legendre de grau $n = 2$ at\'{e} $n = 5$ utilizando a 
+f\'{o}rmula recursiva representada pela Equa\c{c}\~{a}o \ref{eq:ex213-pn-recursiva}.
+
+\end{enumerate}
 
 \subsubsection{Exerc\'{i}cio}
 
-Determine os polin\^{o}mios de Legendre de grau $n = 0$ at\'{e} $n = 5$ utilizando a Equação \ref{eq:ex213-pn-t}. Em seguida, determine os polin\^{o}mios de grau $n = 2$ at\'{e} $n = 5$ utilizando a f\'{o}rmula recursiva 
-(Eq. \ref{eq:ex213-pn-recursiva}). Por último, faça um gr\'{a}fico dos polin\^{o}mios de Legendre $P_{n}(t)$ de grau 
+Fa\c{c}a um gr\'{a}fico dos polin\^{o}mios de Legendre $P_{n}(t)$ de grau 
 $n = 0$ at\'{e} $n = 5$ para $t$ no intervalo $[-1,1]$. 
 
 \begin{flushleft}
@@ -298,16 +313,16 @@ $n = 0$ at\'{e} $n = 5$ para $t$ no intervalo $[-1,1]$.
 \end{flushleft}
 
 %%%%% Exercício 2.4 %%%%%
-\subsection{Equaç\~{a}o de Laplace em coordenadas esf\'{e}ricas}
+\section{Equa\c{c}\~{a}o de Laplace em coordenadas esf\'{e}ricas}
 
-Seja $V(r,\theta,\lambda)$ uma funç\~{a}o harm\^{o}nica que depende das coordenadas esf\'{e}ricas $r$, $\theta$ e $\lambda$ 
-(Fig. \ref{fig:fig2}). Esta funç\~{a}o satisfaz a equaç\~{a}o de Laplace em coordenadas esf\'{e}ricas, que pode ser escrita como
+Seja $V(r,\theta,\lambda)$ uma fun\c{c}\~{a}o harm\^{o}nica que depende das coordenadas esf\'{e}ricas $r$, $\theta$ e $\lambda$ 
+(Fig. \ref{fig:fig2}). Esta fun\c{c}\~{a}o satisfaz a equa\c{c}\~{a}o de Laplace em coordenadas esf\'{e}ricas, que pode ser escrita como
 \begin{equation}
 r^{2} \, \frac{\partial^{2} \, V}{\partial \, r^{2}} +
 2 \, r \, \frac{\partial \, V}{\partial \, r} +
 \frac{\partial^{2} \, V}{\partial \, \theta^{2}} +
-cot \theta \, \frac{\partial \, V}{\partial \, \theta} +
-\frac{1}{sen^{2} \theta} \, \frac{\partial^{2} \, V}{\partial \, \lambda^{2}} = 0 \quad .
+\text{cot} \theta \, \frac{\partial \, V}{\partial \, \theta} +
+\frac{1}{\text{sen}^{2} \theta} \, \frac{\partial^{2} \, V}{\partial \, \lambda^{2}} = 0 \quad .
 \label{eq:ex214-eq-Laplace-esferica}
 \end{equation}
 
@@ -320,28 +335,20 @@ cot \theta \, \frac{\partial \, V}{\partial \, \theta} +
 \end{figure}
 %<== Figuras
 
-\bigskip
-\bigskip
+\subsection{Solu\c{c}\~{a}o da Equa\c{c}\~{a}o de Laplace em coordenadas esf\'{e}ricas}
 
-\begin{flushleft}
-\emph{\textbf{Soluç\~{a}o da Equaç\~{a}o de Laplace em coordenadas esf\'{e}ricas}}
-\end{flushleft}
-
-\bigskip
-\bigskip
-
-A equação de Laplace \ref{eq:ex214-eq-Laplace-esferica} pode ser resolvida pelo m\'{e}todo de separaç\~{a}o de vari\'{a}veis. 
-Este m\'{e}todo consiste em supor que a funç\~{a}o $V(r,\theta,\lambda)$ pode ser reescrita como o produto entre tr\^{e}s funç\~{o}es 
+A equa\c{c}ão de Laplace \ref{eq:ex214-eq-Laplace-esferica} pode ser resolvida pelo m\'{e}todo de separa\c{c}\~{a}o de vari\'{a}veis. 
+Este m\'{e}todo consiste em supor que a fun\c{c}\~{a}o $V(r,\theta,\lambda)$ pode ser reescrita como o produto entre tr\^{e}s fun\c{c}\~{o}es 
 independentes:
 \begin{equation}
 V(r,\theta,\lambda) = f(r) \, g(\theta) \, h(\lambda) \quad .
 \label{eq:ex214-v-fhg}
 \end{equation}
-O pr\'{o}ximo passo consiste em determinar as funç\~{o}es $f(r)$, $g(\theta)$ e $h(\lambda)$. Para tanto, basta substituir a funç\~{a}o 
-$V(r,\theta,\lambda)$ dada pela Equaç\~{a}o \ref{eq:ex214-v-fhg} na equaç\~{a}o de Laplace \ref{eq:ex214-eq-Laplace-esferica}. Esta 
-substituiç\~{a}o nos leva a conclus\~{a}o de que a funç\~{a}o $f(r)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial 
-\ref{eq:ex211-eqdif-r}. Tal como visto anteriormente, as funç\~{o}es $f_{1}(r)$ (Eq. \ref{eq:ex211-r^}) e $f_{2}(r)$ 
-(Eq. \ref{eq:ex211-r_}) s\~{a}o soluç\~{o}es desta equaç\~{a}o. Neste caso, mostra-se que a funç\~{a}o $V(r,\theta,\lambda)$ pode 
+O pr\'{o}ximo passo consiste em determinar as fun\c{c}\~{o}es $f(r)$, $g(\theta)$ e $h(\lambda)$. Para tanto, basta substituir a fun\c{c}\~{a}o 
+$V(r,\theta,\lambda)$ dada pela Equa\c{c}\~{a}o \ref{eq:ex214-v-fhg} na equa\c{c}\~{a}o de Laplace \ref{eq:ex214-eq-Laplace-esferica}. Esta 
+substitui\c{c}\~{a}o nos leva a conclus\~{a}o de que a fun\c{c}\~{a}o $f(r)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equa\c{c}\~{a}o diferencial 
+\ref{eq:ex211-eqdif-r}. Tal como visto anteriormente, as fun\c{c}\~{o}es $f_{1}(r)$ (Eq. \ref{eq:ex211-r^}) e $f_{2}(r)$ 
+(Eq. \ref{eq:ex211-r_}) s\~{a}o solu\c{c}\~{o}es desta equa\c{c}\~{a}o. Neste caso, mostra-se que a fun\c{c}\~{a}o $V(r,\theta,\lambda)$ pode 
 ser escrita como:
 \begin{equation}
 V(r,\theta,\lambda) = r^{n} \, g(\theta) \, h(\lambda) \quad ,
@@ -352,13 +359,13 @@ ou
 V(r,\theta,\lambda) = \frac{1}{r^{(n+1)}} \, g(\theta) \, h(\lambda) \quad .
 \label{eq:ex214-v-f2gh}
 \end{equation}
-Estas funç\~{o}es s\~{a}o denominadas harm\^{o}nicos esf\'{e}ricos s\'{o}lidos. De forma an\'{a}loga, mostra-se que a funç\~{a}o 
-$h(\lambda)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial \ref{eq:ex212-eqdif-lamb}, que possui as soluç\~{o}es 
-$h_{1}(\lambda)$ (Eq. \ref{eq:ex212-cos}) e $h_{2}(\lambda)$ (Eq. \ref{eq:ex212-sen}), e que a funç\~{a}o $g(\theta)$ (Eq. 
-\ref{eq:ex214-v-fhg}) satisfaz a equaç\~{a}o diferencial \ref{eq:ex213-eq-diff-Legendre-theta}, cuja soluç\~{a}o \'{e} dada 
-pelos polin\^{o}mios associados de Legendre $P_{nm}(cos\theta)$ (Eq. \ref{eq:ex213-g-theta}). Os polin\^{o}mios associados de 
-Legendre $P_{nm}(cos\theta)$ podem ser obtidos pela Equação \ref{eq:ex213-pnm-t}, em que $t = cos \theta$. Por fim, \'{e} poss\'{i}vel 
-mostrar que a funç\~{a}o $V(r,\theta,\lambda)$ pode ser escrita de duas formas:
+De forma an\'{a}loga, mostra-se que a fun\c{c}\~{a}o 
+$h(\lambda)$ (Eq. \ref{eq:ex214-v-fhg}) satisfaz a equa\c{c}\~{a}o diferencial \ref{eq:ex212-eqdif-lamb}, que possui as solu\c{c}\~{o}es 
+$h_{1}(\lambda)$ (Eq. \ref{eq:ex212-cos}) e $h_{2}(\lambda)$ (Eq. \ref{eq:ex212-sen}), e que a fun\c{c}\~{a}o $g(\theta)$ (Eq. 
+\ref{eq:ex214-v-fhg}) satisfaz a equa\c{c}\~{a}o diferencial \ref{eq:ex213-eq-diff-Legendre-theta}, cuja solu\c{c}\~{a}o \'{e} dada 
+pelos polin\^{o}mios associados de Legendre $P_{nm}(\text{cos}\theta)$ (Eq. \ref{eq:ex213-g-theta}). Os polin\^{o}mios associados de 
+Legendre $P_{nm}(\text{cos}\theta)$ podem ser obtidos pela Equa\c{c}ão \ref{eq:ex213-pnm-t}, em que $t = \text{cos} \theta$. Por fim, \'{e} poss\'{i}vel 
+mostrar que a fun\c{c}\~{a}o $V(r,\theta,\lambda)$ pode ser escrita de duas formas:
 \begin{equation}
 V_{e}(r,\theta,\lambda) = \sum_{n=0}^{\infty} r^{n} \, 
 Y_{n}(\theta, \lambda) \quad ,
@@ -379,32 +386,32 @@ B_{nm} \, S_{nm}(\theta, \lambda)
 \right] \quad ,
 \label{eq:ex214-Yn}
 \end{equation}
-sendo $A_{nm}$ e $B_{nm}$ constantes e as funç\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$ dadas por
+sendo $A_{nm}$ e $B_{nm}$ constantes e as fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$ dadas por
 \begin{equation}
-R_{nm}(\theta, \lambda) = P_{nm}(cos\theta) \, cos(m \, \lambda)
+R_{nm}(\theta, \lambda) = P_{nm}(\text{cos}\theta) \, \text{cos}(m \, \lambda)
 \label{eq:ex214-rnm}
 \end{equation}
 e
 \begin{equation}
-S_{nm}(\theta, \lambda) = P_{nm}(cos\theta) \, sen(m \, \lambda) \quad .
+S_{nm}(\theta, \lambda) = P_{nm}(\text{cos}\theta) \, \text{sen}(m \, \lambda) \quad .
 \label{eq:ex214-snm}
 \end{equation}
-As funç\~{o}es $Y_{n}(\theta, \lambda)$ (Eq. \ref{eq:ex214-Yn}) s\~{a}o denominadas harm\^{o}nicos (esf\'{e}ricos) de superf\'{i}cie.
+As fun\c{c}\~{o}es $V_{e}(r,\theta,\lambda)$ (Eq. \ref{eq:ex214-ve}) e
+$V_{i}(r,\theta,\lambda)$ (Eq. \ref{eq:ex214-vi}) s\~{a}o denominadas 
+\textit{harm\^{o}nicos esf\'{e}ricos s\'{o}lidos}. Já as fun\c{c}\~{o}es $Y_{n}(\theta, \lambda)$ 
+(Eq. \ref{eq:ex214-Yn}) s\~{a}o denominadas \textit{harm\^{o}nicos (esf\'{e}ricos) de superf\'{i}cie}.
 
-\bigskip
-\bigskip
 
-\begin{flushleft}
-\emph{\textbf{Relaç\~{o}es de ortogonalidade entre as funç\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$}}
-\end{flushleft}
+\subsection{Rela\c{c}\~{o}es de ortogonalidade entre as fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$}
 
-\bigskip
-\bigskip
-
-As constantes $A_{nm}$ e $B_{nm}$ (Eq. \ref{eq:ex214-Yn}) podem ser determinadas por meio das relaç\~{o}es de ortogonalidade entre as
-funç\~{o}es $R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e $S_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-snm}). Para tanto, vamos
-considerar $r = 1$ nas equaç\~{o}es \ref{eq:ex214-ve} e \ref{eq:ex214-vi}. Dessa maneira, estas equaç\~{o}es s\~{a}o iguais a uma funç\~{a}o 
-$f(\theta,\lambda)$ que pode ser escrita em funç\~{a}o dos harm\^{o}nicos de superf\'{i}cie (Eq. \ref{eq:ex214-Yn}) da seguinte forma
+As expressões analíticas que descrevem as constantes $A_{nm}$ e $B_{nm}$ (Eq. \ref{eq:ex214-Yn}) 
+podem ser determinadas por meio das rela\c{c}\~{o}es de ortogonalidade entre as
+fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e $S_{nm}(\theta, \lambda)$ 
+(Eq. \ref{eq:ex214-snm}). Para tanto, vamos
+considerar $r = 1$ nas equa\c{c}\~{o}es \ref{eq:ex214-ve} e \ref{eq:ex214-vi}. Dessa maneira, estas 
+equa\c{c}\~{o}es s\~{a}o iguais a uma fun\c{c}\~{a}o 
+$f(\theta,\lambda)$ que pode ser escrita em fun\c{c}\~{a}o dos harm\^{o}nicos de superf\'{i}cie 
+(Eq. \ref{eq:ex214-Yn}) da seguinte forma
 \begin{equation}
 \begin{split}
 f(\theta,\lambda) & = \sum_{n=0}^{\infty} 
@@ -417,7 +424,8 @@ B_{nm} \, S_{nm}(\theta, \lambda)
 \end{split}
 \label{eq:ex214-f}
 \end{equation}
-De acordo com as relaç\~{o}es de ortogonalidade entre as funç\~{o}es $R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e 
+De acordo com as rela\c{c}\~{o}es de ortogonalidade entre as fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ 
+(Eq. \ref{eq:ex214-rnm}) e 
 $S_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-snm}),
 \begin{equation}
 \iint \limits_{\sigma}
@@ -436,7 +444,7 @@ para o caso em que $nm \neq op$. J\'{a} a integral
 R_{nm}(\theta, \lambda) \, S_{op}(\theta, \lambda) \, d \sigma  = 0
 \label{eq:ex214-ortog-rnm-snm}
 \end{equation}
-\'{e} sempre zero, independente dos valores de $o$ e $p$. Nestas Equaç\~{o}es, 
+\'{e} sempre zero, independente dos valores de $o$ e $p$. Nestas Equa\c{c}\~{o}es, 
 $\iint \limits_{\sigma} = \int_{\lambda = 0}^{2\pi} \, \int_{\theta = 0}^{\pi}$ e $d 
 \sigma = sen\theta \, d\theta d\lambda$. Por outro lado, estas integrais s\~{a}o diferentes 
 de zero quando $nm = op$. Neste caso,
@@ -462,19 +470,13 @@ Observe que estas integrais (Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-
 \ref{eq:ex214-ortog-rn02} e \ref{eq:ex214-ortog-rnm2-snm2}) s\~{a}o avaliadas sobre a superf\'{i}cie $\sigma$ de uma esfera
 com raio unit\'{a}rio, cuja \'{a}rea \'{e} igual a $4 \, \pi$.
 
-\bigskip
-\bigskip
 
-\begin{flushleft}
-\emph{\textbf{Determinaç\~{a}o das constantes $A_{nm}$ e $B_{nm}$}}
-\end{flushleft}
+\subsection{Determina\c{c}\~{a}o das expressões analíticas que descrevem as constantes $A_{nm}$ e $B_{nm}$}
 
-\bigskip
-\bigskip
-
-Para determinar as constantes $A_{nm}$ (Eqs. \ref{eq:ex214-Yn} e \ref{eq:ex214-f}), basta multiplicar os 
-dois lados da Equação \ref{eq:ex214-f} por $R_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-rnm}), integrar o resultado sobre 
-a superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as relaç\~{o}es de ortogonalidade 
+Para determinar as expressões analíticas que descrevem as constantes $A_{nm}$ (Eqs. \ref{eq:ex214-Yn} e 
+\ref{eq:ex214-f}), basta multiplicar os 
+dois lados da Equa\c{c}ão \ref{eq:ex214-f} por $R_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-rnm}), integrar o resultado sobre 
+a superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as rela\c{c}\~{o}es de ortogonalidade 
 (Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-snm}, \ref{eq:ex214-ortog-rnm-snm}, \ref{eq:ex214-ortog-rn02} e 
 \ref{eq:ex214-ortog-rnm2-snm2}):
 \begin{equation}
@@ -519,10 +521,10 @@ A_{op} \, \iint \limits_{\sigma} R_{op}^{2}(\theta,\lambda) \, d \sigma
 \end{split} \: .
 \label{eq:ex214-int-Anm}
 \end{equation}
-
-De forma an\'{a}loga, para determinar as constantes $B_{nm}$ (Eqs. \ref{eq:ex214-Yn} e \ref{eq:ex214-f}), basta multiplicar os 
-dois lados da Equação \ref{eq:ex214-f} por $S_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-snm}), integrar o resultado sobre a 
-superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as relaç\~{o}es de ortogonalidade 
+De forma an\'{a}loga, para obter as expressões analíticas que descrevem as 
+constantes $B_{nm}$ (Eqs. \ref{eq:ex214-Yn} e \ref{eq:ex214-f}), basta multiplicar os 
+dois lados da Equa\c{c}ão \ref{eq:ex214-f} por $S_{op}(\theta,\lambda)$ (Eq. \ref{eq:ex214-snm}), integrar o resultado sobre a 
+superf\'{i}cie $\sigma$ de uma esfera com raio unit\'{a}rio e utilizar as rela\c{c}\~{o}es de ortogonalidade 
 (Eqs. \ref{eq:ex214-ortog-rnm}, \ref{eq:ex214-ortog-snm}, \ref{eq:ex214-ortog-rnm-snm}, \ref{eq:ex214-ortog-rn02} e 
 \ref{eq:ex214-ortog-rnm2-snm2}):
 \begin{equation}
@@ -531,7 +533,7 @@ f(\theta,\lambda) \, S_{op}(\theta,\lambda) \, d \sigma
 = B_{op} \, \iint \limits_{\sigma} S_{op}^{2}(\theta,\lambda) \, d \sigma \: .
 \label{eq:ex214-int-Bnm}
 \end{equation}
-A partir das Equaç\~{o}es \ref{eq:ex214-int-Anm} e \ref{eq:ex214-int-Bnm} temos que
+A partir das Equa\c{c}\~{o}es \ref{eq:ex214-int-Anm} e \ref{eq:ex214-int-Bnm} temos que
 \begin{equation}
 A_{n0} = \dfrac{2 \, n + 1}{4 \, \pi} \, 
 \iint \limits_{\sigma} 
@@ -552,21 +554,13 @@ f(\theta,\lambda) \, S_{nm}(\theta,\lambda) \, d \sigma \; , \: m \neq 0 \, .
 \label{eq:ex214-Anm}
 \end{equation}
 
-\bigskip
-\bigskip
+\subsection{Normaliza\c{c}\~{a}o das fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$}
 
-\begin{flushleft}
-\emph{\textbf{Normalizaç\~{a}o das funç\~{o}es $R_{nm}(\theta, \lambda)$ e $S_{nm}(\theta, \lambda)$}}
-\end{flushleft}
-
-\bigskip
-\bigskip
-
-Em geof\'{i}sica, a descriç\~{a}o do campo de gravidade e do campo geomagn\'{e}tico \'{e} feita por
+Em geof\'{i}sica, a descri\c{c}\~{a}o do campo de gravidade e do campo geomagn\'{e}tico \'{e} feita por
 meio dos harm\^{o}nicos esf\'{e}ricos (Eqs. \ref{eq:ex214-ve} e \ref{eq:ex214-vi}). Contudo, por 
-conveni\^{e}ncia, a descriç\~{a}o destes campos n\~{a}o \'{e} feita utilizando-se as funç\~{o}es 
-$R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-ortog-rnm}) e $S_{nm}(\theta, \lambda)$ 
-(Eq. \ref{eq:ex214-ortog-snm}). Ao inv\'{e}s destas funç\~{o}es, s\~{a}o utilizadas as funç\~{o}es 
+conveni\^{e}ncia, a descri\c{c}\~{a}o destes campos n\~{a}o \'{e} feita utilizando-se as fun\c{c}\~{o}es 
+$R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e $S_{nm}(\theta, \lambda)$ 
+(Eq. \ref{eq:ex214-snm}). Ao inv\'{e}s destas fun\c{c}\~{o}es, s\~{a}o utilizadas as fun\c{c}\~{o}es 
 normalizadas
 \begin{equation}
 \overline{R}_{nm}(\theta,\lambda) = c_{nm} \, R_{nm}(\theta,\lambda)
@@ -577,6 +571,27 @@ e
 \overline{S}_{nm}(\theta,\lambda) = c_{nm} \, S_{nm}(\theta,\lambda) \: .
 \label{eq:ex214-snm-norm}
 \end{equation}
+Utilizando as Equa\c{c}\~{o}es \ref{eq:ex214-rnm} e \ref{eq:ex214-snm}, \'{e}
+poss\'{i}vel reescrever as Equa\c{c}\~{o}es \ref{eq:ex214-rnm-norm} e 
+\ref{eq:ex214-snm-norm} em fun\c{c}\~{a}o dos Polin\^{o}mios associados
+de Legendre (Eqs. \ref{eq:ex213-g-theta} e \ref{eq:ex213-pnm-t}) da
+seguinte forma
+\begin{equation}
+\overline{R}_{nm}(\theta,\lambda) = \overline{P}_{nm}(\text{cos}\theta) \, \text{cos}(m \, \lambda)
+\label{eq:ex214-rnm-pnm-norm}
+\end{equation}
+e
+\begin{equation}
+\overline{S}_{nm}(\theta,\lambda) = \overline{P}_{nm}(\text{cos}\theta) \, \text{sen}(m \, \lambda) \: ,
+\label{eq:ex214-snm-pnm-norm}
+\end{equation}
+em que
+\begin{equation}
+\overline{P}_{nm}(\text{cos}\theta) = c_{nm} \, P_{nm}(\text{cos}\theta)
+\label{eq:pnm-norm}
+\end{equation}
+s\~{a}o os \textit{Polin\^{o}mios associados de Legendre plenamente normalizados}.
+
 Para descrever o campo de gravidade, os coeficientes $c_{nm}$ 
 (Eqs. \ref{eq:ex214-rnm-norm} e \ref{eq:ex214-snm-norm}) são 
 \begin{equation}
@@ -606,7 +621,7 @@ c_{nm}^{ge} = \sqrt{2 \, \dfrac{(n - m)!}{(n + m)!}} \: , \quad m \neq 0 \, .
 
 \subsubsection{Exerc\'{i}cio}
 
-Utilizando as relaç\~{o}es de ortogonalidade entre as funç\~{o}es $R_{nm}(\theta, \lambda)$ 
+Utilizando as rela\c{c}\~{o}es de ortogonalidade entre as fun\c{c}\~{o}es $R_{nm}(\theta, \lambda)$ 
 (Eq. \ref{eq:ex214-ortog-rnm}) e $S_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-ortog-snm}),
 determine 
 $$\dfrac{1}{4 \, \pi} \, \iint \limits_{\sigma} \left[ \overline{R}_{nm}^{gr} (\theta, \lambda)
@@ -619,12 +634,12 @@ e
 $$\dfrac{1}{4 \, \pi} \, \iint \limits_{\sigma} \left[ \overline{S}_{nm}^{ge}  (\theta, \lambda)
 \right]^{2} \, d \sigma \: ,$$
 em que $\iint \limits_{\sigma} = \int_{\lambda = 0}^{2\pi} \, \int_{\theta = 0}^{\pi}$ e $d \sigma 
-= sen\theta \, d\theta d\lambda$. Nestas integrais, $\overline{R}_{nm}^{gr} (\theta, \lambda)$ e 
-$\overline{S}_{nm}^{gr} (\theta, \lambda)$ representam as funç\~{o}es normalizadas $\overline{R}_{nm}
+= \text{sen}\theta \, d\theta d\lambda$. Nestas integrais, $\overline{R}_{nm}^{gr} (\theta, \lambda)$ e 
+$\overline{S}_{nm}^{gr} (\theta, \lambda)$ representam as fun\c{c}\~{o}es normalizadas $\overline{R}_{nm}
 (\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm-norm}) e $\overline{S}_{nm} (\theta, \lambda)$ 
 (Eq. \ref{eq:ex214-snm-norm}) utilizando-se os coeficientes $c_{n0}^{gr}$ (Eq. \ref{eq:ex214-cn0-grav}) 
 e $c_{nm}^{gr}$ (Eq. \ref{eq:ex214-cnm-grav}). Analogamente, $\overline{R}_{nm}^{ge} (\theta, \lambda)$ 
-e $\overline{S}_{nm}^{ge} (\theta, \lambda)$ representam as funç\~{o}es normalizadas 
+e $\overline{S}_{nm}^{ge} (\theta, \lambda)$ representam as fun\c{c}\~{o}es normalizadas 
 $\overline{R}_{nm} (\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm-norm}) e $\overline{S}_{nm} (\theta, \lambda)$ 
 (Eq. \ref{eq:ex214-snm-norm}) utilizando-se os coeficientes $c_{n0}^{ge}$ 
 (Eq. \ref{eq:ex214-cn0-geom}) e $c_{nm}^{ge}$ (Eq. \ref{eq:ex214-cnm-geom}).
@@ -633,12 +648,92 @@ $\overline{R}_{nm} (\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm-norm}) e $\overline
 \dotfill
 \end{flushleft}
 
-\bigskip
-\bigskip
+\subsection{Descri\c{c}\~{a}o do campo de gravidade em harm\^{o}nicos esf\'{e}ricos}
 
-\begin{flushleft}
-\emph{\textbf{Expans\~{a}o da funç\~{a}o inverso da dist\^{a}ncia e f\'{o}rmula da decomposiç\~{a}o}}
-\end{flushleft}
+A for\c{c}a total exercida sobre um corpo de prova que possui massa $m_{0}$ e est\'{a} em
+repouso sobre a superf\'{i}cie da Terra \'{e} a soma da \textit{for\c{c}a 
+gravitacional} e da \textit{for\c{c}a centr\'{i}fuga}.
+Se dividirmos a for\c{c}a total pela massa $m_{0}$ do corpo de prova, o resultado
+\'{e} uma grandeza com unidade de acelera\c{c}\~{a}o denominada \textit{acelera\c{c}\~{a}o
+de gravidade} ou \textit{vetor gravidade}.
+O vetor gravidade \'{e} a soma entre uma acelera\c{c}\~{a}o de origem gravitacional 
+e outra devido ao movimento de rota\c{c}\~{a}o da Terra. Por conveni\^{e}ncia,
+a primeira \'{e} denominada \textit{acelera\c{c}\~{a}o gravitacional} e a outra 
+\textit{acelera\c{c}\~{a}o centr\'{i}fuga}.
+Do ponto de vista f\'{i}sico, o vetor gravidade \'{e} o gradiente de uma fun\c{c}\~{a}o
+escalar denominada \textit{potencial de gravidade}. 
+Analogamente, a acelera\c{c}\~{a}o gravitacional e a centr\'{i}fuga s\~{a}o, 
+respectivamente, o gradiente do \textit{potencial gravitacional} e o gradiente 
+do \textit{potencial centr\'{i}fugo}.
+O potencial gravitacional \'{e} uma fun\c{c}\~{a}o harm\^{o}nica e, portanto,
+satisfaz a equa\c{c}\~{a}o de Laplace.
+Devido a natureza f\'{i}sica do problema, o potencial gravitacional pode ser descrito
+em termos dos harm\^{o}nicos esf\'{e}ricos s\'{o}lidos representados pela Equa\c{c}\~{a}o 
+\ref{eq:ex214-vi}. Sendo assim, de acordo com as Equa\c{c}\~{o}es 
+\ref{eq:ex214-vi}-\ref{eq:ex214-snm}, o potencial gravitacional $V(r, \theta, \lambda)$
+em um ponto $(r, \theta, \lambda)$ de um sistema de coordenadas esf\'{e}ricas (Fig. \ref{fig:fig2})
+pode ser escrito como:
+\begin{equation}
+V(r, \theta, \lambda) = \sum_{n=0}^{\infty} \, \sum_{m=0}^{n} 
+\frac{1}{r^{(n+1)}} \left[ 
+A_{nm} \, R_{nm}(\theta, \lambda) +
+B_{nm} \, S_{nm}(\theta, \lambda)
+\right] \: .
+\label{eq:potencial-gravitacional}
+\end{equation}
+Tal como mencionado anteriormente, a descri\c{c}\~{a}o do campo de gravidade 
+n\~{a}o \'{e} feita utilizando-se as fun\c{c}\~{o}es 
+$R_{nm}(\theta, \lambda)$ (Eq. \ref{eq:ex214-rnm}) e $S_{nm}(\theta, \lambda)$ 
+(Eq. \ref{eq:ex214-snm}), mas sim as fun\c{c}\~{o}es normalizadas
+$\overline{R}_{nm}(\theta,\lambda)$ (Eq. \ref{eq:ex214-rnm-norm}) e
+$\overline{S}_{nm}(\theta,\lambda)$ (Eq. \ref{eq:ex214-snm-norm}), cujos
+coeficientes de normaliza\c{c}\~{a}o $c_{nm} = c_{nm}^{gr}$ s\~{a}o mostrados
+nas Equa\c{c}\~{o}es \ref{eq:ex214-cn0-grav} e \ref{eq:ex214-cnm-grav}.
+Assim, o potencial gravitacional $V(r, \theta, \lambda)$ (Eq. 
+\ref{eq:potencial-gravitacional}) pode ser reescrito da seguinte forma:
+\begin{equation}
+V(r, \theta, \lambda) = \frac{GM}{r} \, \sum_{n=0}^{\infty} \, \sum_{m=0}^{n} 
+\frac{1}{r^{n}} \left[ 
+\frac{A_{nm}}{c_{nm}^{gr} \, GM} \, \overline{R}_{nm}(\theta, \lambda) +
+\frac{B_{nm}}{c_{nm}^{gr} \, GM} \, \overline{S}_{nm}(\theta, \lambda)
+\right] \: ,
+\label{eq:potencial-gravitacional-2}
+\end{equation}
+em que a constante $GM$ representa o produto entre a constante gravitacional $G$ 
+e a massa $M$ da Terra. Note que, para obter a Equa\c{c}\~{a}o 
+\ref{eq:potencial-gravitacional-2}, \'{e} necess\'{a}rio multiplicar e dividir 
+a Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional} pela dist\^{a}ncia radial $r$
+(Fig. \ref{fig:fig2}).
+Finalmente, se multiplicarmos e dividirmos cada elemento
+do somat\'{o}rio da Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional-2}
+pelo raio m\'{e}dio da Terra $R$ e substituirmos as Equa\c{c}\~{o}es
+\ref{eq:ex214-rnm-pnm-norm} e \ref{eq:ex214-snm-pnm-norm}, 
+o potencial gravitacional \'{e} representado por:
+\begin{equation}
+V(r, \theta, \lambda) = \frac{GM}{r} \, 
+\sum_{n=0}^{n_{max}} \, \sum_{m=0}^{n} 
+\left(\frac{R}{r}\right)^{n} \, \overline{P}_{nm}(\text{cos}\theta) \, \left[ 
+\overline{A}_{nm} \, \text{cos}(m \, \lambda) +
+\overline{B}_{nm} \, \text{sen}(m \, \lambda)
+\right] \: ,
+\label{eq:potencial-gravitacional-3}
+\end{equation}
+em que $\overline{P}_{nm}(\text{cos}\theta)$ s\~{a}o os Polin\^{o}mios associados 
+de Legendre plenamente normalizados (Eq. \ref{eq:pnm-norm}), cujos
+coeficientes de normaliza\c{c}\~{a}o $c_{nm} = c_{nm}^{gr}$ s\~{a}o mostrados
+nas Equa\c{c}\~{o}es \ref{eq:ex214-cn0-grav} e \ref{eq:ex214-cnm-grav}.
+Note que, diferente da Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional-2},
+o somat\'{o}rio na Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional-3}
+n\~{a}o vai at\'{e} $n = \infty$, mas sim at\'{e} um grau m\'{a}ximo 
+$n = n_{max}$ finito.
+Um conjunto de coeficientes $\overline{A}_{nm}$ e $\overline{B}_{nm}$
+provenientes da expans\~{a}o em harm\^{o}nicos esf\'{e}ricos 
+s\'{o}lidos representada pela Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional-3}
+at\'{e} um grau m\'{a}ximo $n = n_{max}$ constitui um \textit{modelo global do
+campo de gravidade}.
+
+\subsection{Expans\~{a}o da fun\c{c}\~{a}o inverso da dist\^{a}ncia e f\'{o}rmula 
+da decomposi\c{c}\~{a}o}
 
 Considere dois pontos $P$ e $P^{\,\prime}$ separados por um ângulo $\psi$ e
 uma distância $l$ (Figura \ref{fig:fig3}). De acordo com a lei dos cossenos,
@@ -653,12 +748,12 @@ em que
                  \text{sen}\theta \, \text{sen}\theta' \, \text{cos}(\lambda' - \lambda) \: .
 \label{eq:cos-psi}
 \end{equation}
-A partir da Equação \ref{eq:distancia-l}, é possível escrever
+A partir da Equa\c{c}ão \ref{eq:distancia-l}, é possível escrever
 \begin{equation}
 \dfrac{1}{l} = \dfrac{1}{\sqrt{r^{2} - r'^{2} - 2 \, r \, r^{\,\prime} \, \text{cos}\psi}} \: .
 \label{eq:inv-distancia-l}
 \end{equation}
-Sabe-se que, se $r' < r$, a função $1/l$ (Eq. \ref{eq:inv-distancia-l}) pode
+Sabe-se que, se $r' < r$, a fun\c{c}ão $1/l$ (Eq. \ref{eq:inv-distancia-l}) pode
 ser descrita pela expansão
 \begin{equation}
 \dfrac{1}{l} = \sum_{n=0}^{\infty} \dfrac{r'^{n}}{r^{n+1}} \, P_{n}(\text{cos}\psi) \: ,
@@ -666,8 +761,8 @@ ser descrita pela expansão
 \end{equation}
 em que $P_{n}(t) = P_{n}(\text{cos}\psi)$ (Eqs. \ref{eq:ex213-pn-t} e \ref{eq:ex213-pn-recursiva})
 são os Polinômios de Legendre. Por questões práticas, os Polinômios de Legendre 
-$P_{n}(\text{cos}\psi)$ são reescritos em função das coordenadas esféricas 
-$(r, \theta, \lambda)$ a partir da \textit{fórmula da decomposição}:
+$P_{n}(\text{cos}\psi)$ são reescritos em fun\c{c}ão das coordenadas esféricas 
+$(r, \theta, \lambda)$ a partir da \textit{fórmula da decomposi\c{c}ão}:
 \begin{equation}
 P_{n}(\text{cos}\psi) = 
 \label{eq:formula-decomposicao}
