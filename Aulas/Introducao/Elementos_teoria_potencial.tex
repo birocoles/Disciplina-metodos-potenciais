@@ -871,12 +871,150 @@ e \ref{eq:potencial-magnetico-e-2}
 n\~{a}o come\c{c}am em $n = 0$, mas sim em $n = 1$. Isso se deve
 ao fato de que o primeiro termo da expans\~{a}o \'{e} nulo
 para o caso magn\'{e}tico.
+Os coeficientes $g_{nm}(t)$, $h_{nm}(t)$, $q_{nm}(t)$ e $s_{nm}(t)$ 
+(Equa\c{c}\~{o}es \ref{eq:potencial-magnetico-i-2} e \ref{eq:potencial-magnetico-e-2}) 
+s\~{a}o comumente denominados \textit{coeficientes de Gauss} e definem um modelo
+global do campo geomagn\'{e}tico.
 
+\subsection{Algoritmos para o c\'{a}lculo dos polin\^{o}mios associados de Legendre normalizados}
 
+Tal como explicado na subse\c{c}\~{a}o anterior, os campos de gravidade e geomagn\'{e}tico
+podem ser descritos por meio de uma expans\~{a}o em harm\^{o}nicos esf\'{e}ricos.
+O campo de gravidade \'{e} descrito pela Equa\c{c}\~{a}o \ref{eq:potencial-gravitacional-3} e
+o campo geomagn\'{e}tico pelas Equa\c{c}\~{o}es \ref{eq:potencial-magnetico-i-2} e
+\ref{eq:potencial-magnetico-e-2}.
+Para avaliar as equa\c{c}\~{o}es que descrevem os campos de gravidade e geomagn\'{e}tico, \'{e}
+necess\'{a}rio:  
 
+\begin{enumerate}[(i)]
 
-\subsection{Expans\~{a}o da fun\c{c}\~{a}o inverso da dist\^{a}ncia e f\'{o}rmula 
-da decomposi\c{c}\~{a}o}
+\item ter os coeficientes $\overline{A}_{nm}$ e $\overline{B}_{nm}$ (Equa\c{c}\~{a}o 
+\ref{eq:potencial-gravitacional-3}) e os coeficientes de Gauss
+$g_{nm}(t)$, $h_{nm}(t)$, $q_{nm}(t)$ e $s_{nm}(t)$ 
+(Equa\c{c}\~{o}es \ref{eq:potencial-magnetico-i-2} e \ref{eq:potencial-magnetico-e-2}) e
+
+\item calcular os polin\^{o}mios associados de Legendre $\overline{P}_{nm}(\text{cos}\theta)$ 
+devidamente normalizados.
+
+\end{enumerate}
+
+Com rela\c{c}\~{a}o ao primeiro item, hoje em dia \'{e} relativamente f\'{a}cil
+obter os coeficientes que descrevem os modelos globais para os campos de gravidade
+e geomagn\'{e}tico.
+J\'{a} com rela\c{c}\~{a}o ao segundo item, \'{e} necess\'{a}rio definirmos algumas
+rela\c{c}\~{o}es de recorr\^{e}ncia adicionais para que possamos calcular os polin\^{o}mios
+associados de Legendre plenamente normalizados e os polinom\^{o}mios associados de
+Legendre com a seminormaliza\c{c}\~{a}o de Schmidt.
+
+As rela\c{c}\~{o}es de ortogonalidade para os polin\^{o}mios associados de Legendre 
+plenamente normalizados, utilizados para descrever o campo de gravidade, s\~{a}o dadas
+por:
+
+\begin{equation}
+\overline{P}_{nn} = \frac{\sqrt{2n + 1}}{2n} \, \text{sen}\theta \, 
+                    \overline{P}_{n-1 \, n-1} \: ,
+\label{eq:recorrencia-pnn-pn-1n-1-grav}
+\end{equation}
+\begin{equation}
+\overline{P}_{n \, n-1} = \sqrt{2n + 1} \, \text{cos}\theta \, 
+                          \overline{P}_{n-1 \, n-1}
+\label{eq:recorrencia-pnn-1-pn-1n-1-grav}
+\end{equation}
+e
+\begin{equation}
+\overline{P}_{nm} = \frac{\sqrt{2n + 1}}{\sqrt{n+m} \, \sqrt{n-m}} \,
+                    \left(\sqrt{2n - 1} \, \text{cos}\theta \, \overline{P}_{n-1 \, m} -
+                    \frac{\sqrt{n+m-1} \, \sqrt{n-m-1}}{\sqrt{2n-3}} \,
+                    \overline{P}_{n-2 \, m} \right) \: .
+\label{eq:recorrencia-pnm-pn-1m-pn-2m-grav}
+\end{equation}
+Nestas equa\c{c}\~{o}es, por conveni\^{e}ncia, utilizamos a nota\c{c}\~{a}o
+$\overline{P}_{\alpha \beta} \equiv \overline{P}_{\alpha \beta}(\text{cos}\theta)$.
+De acordo com a Equa\c{c}\~{a}o \ref{eq:recorrencia-pnn-pn-1n-1-grav}, \'{e} poss\'{i}vel
+calcular todos os polin\^{o}mios $\overline{P}_{nn}$, $n > 2$, a partir do
+$\overline{P}_{22}$.
+De acordo com a Equa\c{c}\~{a}o \ref{eq:recorrencia-pnn-1-pn-1n-1-grav}, \'{e} poss\'{i}vel
+utilizar os polin\^{o}mios $\overline{P}_{nn}$ calculados com a Equa\c{c}\~{a}o
+\ref{eq:recorrencia-pnn-pn-1n-1-grav} para calcular todos os polin\^{o}mios 
+$\overline{P}_{n \, n-1}$.
+Por fim, de acordo com a Equa\c{c}\~{a}o \ref{eq:recorrencia-pnm-pn-1m-pn-2m-grav},
+\'{e} poss\'{i}vel utilizar os polin\^{o}mios calculados com as Equa\c{c}\~{o}es
+\ref{eq:recorrencia-pnn-pn-1n-1-grav} e \ref{eq:recorrencia-pnn-1-pn-1n-1-grav}
+para calcular os demais polin\^{i}mios $\overline{P}_{nm}$.
+A partir destas rela\c{c}\~{o}es de recorr\^{e}ncia, \'{e} poss\'{i}vel definirmos
+o seguinte algoritmo:
+
+\subsubsection{Algoritmo para o calcular os polin\^{o}mios associados de Legendre 
+plenamente normalizados}
+
+\bigskip
+
+\begin{minipage}{20em}
+
+\begin{flushleft}
+
+$\text{cosseno} = \text{cos}\theta$
+
+$\text{seno} = \text{sen}\theta$
+
+$\overline{P}_{00} = 1$
+
+$\overline{P}_{10} = \text{cosseno}^{\frac{3}{2}}$
+
+$\overline{P}_{11} = \text{seno}^{\frac{3}{2}}$
+
+$\overline{P}_{20} = \sqrt{1,25} 
+                     \left(3 \, \text{cosseno}^{2} - 1
+                     \right)$
+
+$\overline{P}_{21} = \sqrt{30} \, \text{cosseno} \, \text{seno}$
+
+$\overline{P}_{22} = \sqrt{22,5} \, \text{seno}^{2}$
+
+$n = 3$
+
+Enquanto $n \leq n_{max}$, calcule:
+
+    $\quad\quad a0 = \sqrt{2n + 1}$
+
+    $\quad\quad a1 = \frac{a0}{2n}$
+
+    $\quad\quad \overline{P}_{nn} = a1 \, \text{seno} \, \overline{P}_{n-1 \, n-1}$
+    
+    $\quad\quad \overline{P}_{n \, n-1} = a0 \, \text{cosseno} \, \overline{P}_{n-1 \, n-1}$
+    
+    $\quad\quad a2 = \sqrt{2n - 1}$
+    
+    $\quad\quad a3 = \sqrt{2n - 3}$
+    
+    $\quad\quad m = n - 2$    
+    
+    $\quad\quad$Enquanto $m \geq 0$, calcule:
+    
+    $\quad\quad\quad\quad\quad a4 = \sqrt{(n+m)\,(n-m)}$
+    
+    $\quad\quad\quad\quad\quad a5 = \sqrt{(n+m-1)\,(n-m-1)}$
+    
+    $\quad\quad\quad\quad\quad \overline{P}_{nm} = a2 \, \text{cosseno} \, \overline{P}_{n-1 \, m}$
+    
+    $\quad\quad\quad\quad\quad \overline{P}_{nm} = \overline{P}_{nm} - \frac{a5}{a3} \, \overline{P}_{n-2 \, m}$
+    
+    $\quad\quad\quad\quad\quad \overline{P}_{nm} = \frac{a0}{a4} \, \overline{P}_{nm}$
+    
+    $\quad\quad\quad\quad\quad m = m - 1$
+
+$\quad\quad n = n + 1$
+    
+\end{flushleft}
+
+\end{minipage}
+
+\subsubsection{Algoritmo para o calcular os polin\^{o}mios associados de Legendre 
+com a seminormaliza\c{c}\~{a}o de Schmidt}
+
+\bigskip
+
+\subsection{Expans\~{a}o da fun\c{c}\~{a}o inverso da dist\^{a}ncia e f\'{o}rmula da decomposi\c{c}\~{a}o}
 
 Considere dois pontos $P$ e $P^{\,\prime}$ separados por um ângulo $\psi$ e
 uma distância $l$ (Figura \ref{fig:fig3}). De acordo com a lei dos cossenos,
