@@ -90,7 +90,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * [National Centers for Environmental Information - NCEI](https://www.ncei.noaa.gov/)
 
-* [Australian Governments' Geoscience Portal](Australian Governments' Geoscience Portal)
+* [Australian Governments' Geoscience Portal](http://www.geoscience.gov.au/)
 
 * [British Geological Survey](http://geomag.bgs.ac.uk/)
 
