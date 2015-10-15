@@ -71,6 +71,8 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * Langel, R. A. e W. J. Hinze, 1998, The magnetic field of the Earth's lithosphere: the satellite perspective. Cambridge University Press.
 
+* Torge, Wolfgang, 2001, Geodesy. 3<sup>a</sup>ed, Walter de Gruyter, Berlin, ISBN: 3-11-017072-8
+
 * Hofmann-Wellenhof, B. e H. Moritz, 2005, Physical Geodesy. Springer.
 
 * Nabighian, M. N., V. J. S. Grauch, R. O. Hansen, T. R. LaFehr, Y. Li, J. W. Peirce , J. D. Phillips e M. E. Ruder, 2005, 75th Anniversary - 
@@ -90,7 +92,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * [National Centers for Environmental Information - NCEI](https://www.ncei.noaa.gov/)
 
-* [Australian Governments' Geoscience Portal](Australian Governments' Geoscience Portal)
+* [Australian Governments' Geoscience Portal](http://www.geoscience.gov.au/)
 
 * [British Geological Survey](http://geomag.bgs.ac.uk/)
 
