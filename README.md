@@ -71,7 +71,8 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 * Langel, R. A. e W. J. Hinze, 1998, The magnetic field of the Earth's lithosphere: the satellite perspective. Cambridge University Press.
 
-* Torge, Wolfgang, 2001, Geodesy. 3<sup>a</sup>ed, Walter de Gruyter, Berlin, ISBN: 3-11-017072-8
+* Torge, Wolfgang, 2001, Geodesy. 3<sup>a</sup>ed, Walter de Gruyter, Berlin, ISBN: 3-11-017072-8, 
+    url: http://www.fgg.uni-lj.si/~/mkuhar/Zalozba/Torge-Geodesy(2001).pdf
 
 * Hofmann-Wellenhof, B. e H. Moritz, 2005, Physical Geodesy. Springer.
 
