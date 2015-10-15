@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="coordenadas_geodesicas.svg"
-   inkscape:export-filename="C:\Users\Vanderlei\Copy\ON\Minhas_Disciplinas\Metodos_Potenciais\Aulas\Campo_de_Gravidade\Gravidade_normal\coordenadas_geodesicas.png"
+   inkscape:export-filename="C:\Users\Vanderlei\Documents\Disciplina-metodos-potenciais\Aulas\Gravidade_normal\coordenadas_geodesicas.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
   <defs
@@ -186,9 +186,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.77"
-     inkscape:cx="21.701901"
-     inkscape:cy="35.76229"
+     inkscape:zoom="6.925"
+     inkscape:cx="47.99639"
+     inkscape:cy="60"
      inkscape:document-units="pc"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -210,7 +210,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -371,7 +371,7 @@
            y="886.29663"
            x="184.29602"
            id="tspan6422"
-           sodipodi:role="line">ϕ</tspan></text>
+           sodipodi:role="line">φ</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text6424"
