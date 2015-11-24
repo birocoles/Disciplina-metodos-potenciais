@@ -1,5 +1,0 @@
-\select@language {portuguese}
-\contentsline {section}{\numberline {1}Anomalia de Campo Total}{3}
-\contentsline {subsection}{\numberline {1.1}Defini\IeC {\c c}\~{a}o}{3}
-\contentsline {subsection}{\numberline {1.2}Anomalia de Campo Total aproximada}{4}
-\contentsline {subsubsection}{\numberline {1.2.1}Exerc\'{i}cio}{6}
