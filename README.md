@@ -67,7 +67,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 * Rapp, R. H., 1993, Geometric Geodesy - Part II. Ohio State University Department of Geodetic Science and Surveying,
     url: http://hdl.handle.net/1811/24409
 
-* Blakely, R. J., 1996, Potential theory in gravity and magnetic applications. Cambridge University Press.
+* Blakely, R. J., 1996, Potential theory in gravity and magnetic applications. Cambridge University Press. ISBN: 0-521-57547-8
 
 * Langel, R. A. e W. J. Hinze, 1998, The magnetic field of the Earth's lithosphere: the satellite perspective. Cambridge University Press.
 
