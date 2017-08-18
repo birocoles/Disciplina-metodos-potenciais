@@ -1,11 +1,11 @@
 # Métodos Potenciais
 
-Disciplina eletiva oferecida no programa de pós-graduação em 
-geofísica do [Observatório Nacional](http://www.on.br)
+Disciplina eletiva oferecida no [Programa de Pós-Graduação em
+Geofísica](http://www.on.br/index.php/pt-br/programas-academicos/geofisica.html) do [Observatório Nacional](http://www.on.br).
 
 **Responsável**: [Vanderlei C. Oliveira Jr.](http://www.pinga-lab.org/people/oliveira-jr.html)
 
-**Aviso Legal:** O material disponibilizado neste repositório está em constante desenvolvimento e o Observatório Nacional não tem nenhuma responsabilidade sobre o conteúdo disponibilizado neste repositório.
+**Aviso Legal:** O material disponibilizado neste repositório está em constante desenvolvimento e o Observatório Nacional não tem nenhuma responsabilidade sobre o seu conteúdo.
 
 
 ## Ementa
@@ -66,7 +66,7 @@ geofísica do [Observatório Nacional](http://www.on.br)
 
 * Rapp, R. H., 1991, Geometric Geodesy - Part I. Ohio State University Department of Geodetic Science and Surveying,
     url: http://hdl.handle.net/1811/24333
-    
+
 * Rapp, R. H., 1993, Geometric Geodesy - Part II. Ohio State University Department of Geodetic Science and Surveying,
     url: http://hdl.handle.net/1811/24409
 
@@ -74,22 +74,22 @@ geofísica do [Observatório Nacional](http://www.on.br)
 
 * Langel, R. A. e W. J. Hinze, 1998, The magnetic field of the Earth's lithosphere: the satellite perspective. Cambridge University Press.
 
-* Torge, Wolfgang, 2001, Geodesy. 3<sup>a</sup>ed, Walter de Gruyter, Berlin, ISBN: 3-11-017072-8, 
+* Torge, Wolfgang, 2001, Geodesy. 3<sup>a</sup>ed, Walter de Gruyter, Berlin, ISBN: 3-11-017072-8,
     url: http://www.fgg.uni-lj.si/~/mkuhar/Zalozba/Torge-Geodesy(2001).pdf
 
 * Hofmann-Wellenhof, B. e H. Moritz, 2005, Physical Geodesy. Springer.
 
-* Nabighian, M. N., V. J. S. Grauch, R. O. Hansen, T. R. LaFehr, Y. Li, J. W. Peirce , J. D. Phillips e M. E. Ruder, 2005, 75th Anniversary - 
+* Nabighian, M. N., V. J. S. Grauch, R. O. Hansen, T. R. LaFehr, Y. Li, J. W. Peirce , J. D. Phillips e M. E. Ruder, 2005, 75th Anniversary -
     Historical development of the magnetic method in exploration. Geophysics, 70(6), p. 33ND–61ND. DOI: 10.1190/1.2133784.
 
-* Nabighian, M. N., M. E. Ander, V. J. S. Grauch, R. O. Hansen, T. R. LaFehr, Y. Li, W. C. Pearson, J. W. Peirce, J. D. Phillips e M. E. Ruder, 2005, 75th Anniversary - 
+* Nabighian, M. N., M. E. Ander, V. J. S. Grauch, R. O. Hansen, T. R. LaFehr, Y. Li, W. C. Pearson, J. W. Peirce, J. D. Phillips e M. E. Ruder, 2005, 75th Anniversary -
     Historical development of the gravity method in exploration. Geophysics, 70(6), p. 63ND–89ND. DOI: 10.1190/1.2133785.
-    
+
 * Schubert, G. (Editor), 2007, Treatise on geophysics. Elsevier Science, ISBN: 978-0444519283.
 
 * Jekeli, C., 2012, Geometric Reference Systems in Geodesy. Ohio State University, Division of Geodetic Science,
     School of Earth Sciences, url: http://hdl.handle.net/1811/51274
-    
+
 ## Links úteis
 
 * [International Centre for Global Earth Models - ICGEM](http://icgem.gfz-potsdam.de/ICGEM/)
@@ -109,5 +109,3 @@ geofísica do [Observatório Nacional](http://www.on.br)
 * [Base de Dados Gravimétricos do Observatório Nacional](http://www.on.br/conteudo/gravimetria.php)
 
 * [Fatiando a Terra](http://www.fatiando.org/)
-
-
