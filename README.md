@@ -1,15 +1,18 @@
 # Métodos Potenciais
 
 Disciplina eletiva oferecida no programa de pós-graduação em 
-geofísica do [Observatório Nacional - MCTI](http://www.on.br)
+geofísica do [Observatório Nacional](http://www.on.br)
 
-**Responsável**: [Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)
+**Responsável**: [Vanderlei C. Oliveira Jr.](http://www.pinga-lab.org/people/oliveira-jr.html)
+
+**Aviso Legal:** O material disponibilizado neste repositório está em constante desenvolvimento e o Observatório Nacional não tem nenhuma responsabilidade sobre o conteúdo disponibilizado neste repositório.
+
 
 ## Ementa
 
-###Introdução
+### Introdução
 
-###Gravimetria
+### Gravimetria
 
 ###### Campo de gravidade
 
@@ -25,7 +28,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 ###### Gradiometria da Gravidade
 
-###Magnetometria
+### Magnetometria
 
 ###### Campo Geomagnético
 
@@ -35,7 +38,7 @@ geofísica do [Observatório Nacional - MCTI](http://www.on.br)
 
 ###### Anomalias Magnéticas
 
-###Interpretação
+### Interpretação
 
 ###### Separação Regional-Residual
 
