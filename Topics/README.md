@@ -6,6 +6,7 @@
 
 * Campo de gravidade da Terra / Gravity field of the Earth
   - [x] `Campo_gravidade_A`
+  - [ ] `gravity_variations`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [x] `Campo_geomagnetico_A`
@@ -18,7 +19,7 @@
 * Magnetometria / Magnetometry
 
 * Modelagem direta / Forward modeling
-  - [x] `inverse distance function`
+  - [x] `inverse_distance`
   - [x] `dipolo`
 
 * Separação regional residual / Regional-residual separation
