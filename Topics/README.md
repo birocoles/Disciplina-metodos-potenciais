@@ -18,7 +18,8 @@
 * Magnetometria / Magnetometry
 
 * Modelagem direta / Forward modeling
-  - [ ] `dipolo`
+  - [x] `inverse distance function`
+  - [x] `dipolo`
 
 * Separação regional residual / Regional-residual separation
 
