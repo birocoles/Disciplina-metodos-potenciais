@@ -34,6 +34,8 @@ Geofísica](http://www.on.br/index.php/pt-br/programas-academicos/geofisica.html
 * Blakely, R. J., 1996, *Potential theory in gravity and magnetic applications*. Cambridge
 University Press.
 * Hofmann-Wellenhof, B. e H. Moritz, 2005, *Physical Geodesy*. Springer.
+* Sansò, F. e Sideris, M. G., 2013, *Geoid determination: Theory and Methods*.
+Springer, Berlin, Heidelberg, ISBN 978-3-540-74699-7, DOI 10.1007/978-3-540-74700-0
 * Langel, R. A. e W. J. Hinze, 1998, *The magnetic field of the Earth's lithosphere: the
 satellite perspective*. Cambridge University Press.
 * Artigos científicos / Scientific papers
