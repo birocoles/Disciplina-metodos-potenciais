@@ -7,7 +7,9 @@
 
 * Campo de gravidade da Terra / Gravity field of the Earth
   - [x] `Campo_gravidade_A`
-  - [ ] `gravity_variations`
+  - [x] `gravity_variations`
+  - [x] `heights`
+  - [x] `classical_gravity_anomalies`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [x] `Campo_geomagnetico_A`
