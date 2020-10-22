@@ -24,6 +24,10 @@
 * Modelagem direta / Forward modeling
   - [x] `inverse_distance`
   - [x] `dipolo`
+  - [x] `point_mass`
+  - [ ] `3D_sources`
+  - [ ] `magnetic_modeling_A`
+  - [ ] `gravity_modeling_A`
 
 * Separação regional residual / Regional-residual separation
 
