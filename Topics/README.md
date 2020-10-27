@@ -10,7 +10,7 @@
   - [x] `gravity_variations`
   - [x] `heights`
   - [x] `classical_gravity_anomalies`
-  - [ ] `gravidade_normal`
+  - [x] `gravidade_normal`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [x] `Campo_geomagnetico_A`
@@ -33,6 +33,7 @@
   - [x] `3D_sources`
   - [x] `magnetic_modeling_A`
   - [x] `gravity_modeling_A`
+  - [x] `gravity_modeling_B`
   - [ ] `Poisson's Relation`
 
 * Separação regional residual / Regional-residual separation
