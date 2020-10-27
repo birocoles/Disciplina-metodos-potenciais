@@ -10,14 +10,19 @@
   - [x] `gravity_variations`
   - [x] `heights`
   - [x] `classical_gravity_anomalies`
+  - [ ] `gravidade_normal`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [x] `Campo_geomagnetico_A`
   - [x] `anomalia_campo_total`
 
 * Elementos de teoria do potencial / Elements of potential theory
+  - [ ] `harmonicos_esfericos`
+  - [ ] `modelo global do campo de gravidade`
+  - [ ] `modelo global do campo geomagnético principal`
 
 * Gravimetria / Gravimetry
+  - [ ] `correcao_eotvos`
 
 * Magnetometria / Magnetometry
 
