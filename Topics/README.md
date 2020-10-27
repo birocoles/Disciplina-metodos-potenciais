@@ -3,7 +3,7 @@
 * Sistemas de Coordenadas / Coordinate systems
   - [x] `Sistemas_coordenadas_A`
   - [x] `Sistemas_coordenadas_B`
-  - [x] <a href="https://github.com/birocoles/coordinates" target="_blank">Implementação computacional / Computational implementation</a>
+  - [x] [Implementação computacional / Computational implementation](https://github.com/birocoles/coordinates)
 
 * Campo de gravidade da Terra / Gravity field of the Earth
   - [x] `Campo_gravidade_A`
