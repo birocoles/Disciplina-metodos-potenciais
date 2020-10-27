@@ -33,6 +33,7 @@
   - [x] `3D_sources`
   - [x] `magnetic_modeling_A`
   - [x] `gravity_modeling_A`
+  - [ ] `Poisson's Relation`
 
 * Separação regional residual / Regional-residual separation
 
