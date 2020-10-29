@@ -11,12 +11,19 @@
   - [x] `heights`
   - [x] `classical_gravity_anomalies`
   - [x] `gravidade_normal`
+  - [x] `centrifugal_aceleration`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [x] `Campo_geomagnetico_A`
   - [x] `anomalia_campo_total`
 
 * Elementos de teoria do potencial / Elements of potential theory
+  - [x] `inverse_distance`
+  - [x] `dipolo`
+  - [x] `point_mass`
+  - [x] `3D_sources`
+  - [x] `Poisson's Relation`
+  - [ ] `Newtonian_potential`
   - [ ] `harmonicos_esfericos`
   - [ ] `modelo global do campo de gravidade`
   - [ ] `modelo global do campo geomagnético principal`
@@ -27,14 +34,13 @@
 * Magnetometria / Magnetometry
 
 * Modelagem direta / Forward modeling
-  - [x] `inverse_distance`
-  - [x] `dipolo`
-  - [x] `point_mass`
-  - [x] `3D_sources`
   - [x] `magnetic_modeling_A`
+  - [x] `magnetic_modeling_B`
   - [x] `gravity_modeling_A`
   - [x] `gravity_modeling_B`
-  - [ ] `Poisson's Relation`
+  - [ ] `sphere`
+  - [ ] `ellipsoid`
+  - [ ] `rectangular prism`
 
 * Separação regional residual / Regional-residual separation
 
