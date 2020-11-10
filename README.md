@@ -30,6 +30,9 @@ Geofísica](http://www.on.br/index.php/pt-br/programas-academicos/geofisica.html
 
 ## Bibliografia / Bibliography
 
+* Peirce, B. O. 1902. *Elements of the theory of the Newtonian potential function*.
+Ginn & Company, Enlarged 3rd edition
+* MacMillan, W. D. 1930. *The Theory of the Potential*. Dover Publications, Inc.
 * Kellogg, O. D. 1967. *Foundations of Potential Theory*. Springer-Verlag.
 * Blakely, R. J., 1996, *Potential theory in gravity and magnetic applications*. Cambridge
 University Press.
