@@ -38,7 +38,7 @@
   - [x] `magnetic_modeling_B`
   - [x] `gravity_modeling_A`
   - [x] `gravity_modeling_B`
-  - [ ] `sphere`
+  - [x] `sphere`
   - [ ] `ellipsoid`
   - [ ] `rectangular prism`
 
