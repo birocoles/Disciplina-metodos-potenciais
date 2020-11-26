@@ -23,7 +23,8 @@
   - [x] `point_mass`
   - [x] `3D_sources`
   - [x] `Poisson's Relation`
-  - [ ] `Newtonian_potential`
+  - [x] `Newtonian_potential`
+  - [x] `Divergence and Gauss' theorems`
   - [ ] `harmonicos_esfericos`
   - [ ] `modelo global do campo de gravidade`
   - [ ] `modelo global do campo geomagnético principal`
@@ -40,7 +41,7 @@
   - [x] `gravity_modeling_B`
   - [x] `sphere`
   - [ ] `ellipsoid`
-  - [ ] `rectangular prism`
+  - [x] `rectangular prism`
 
 * Separação regional residual / Regional-residual separation
 
