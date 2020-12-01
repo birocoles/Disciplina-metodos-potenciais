@@ -25,7 +25,7 @@
   - [x] `Poisson's Relation`
   - [x] `Newtonian_potential`
   - [x] `Divergence and Gauss' theorems`
-  - [ ] `Green's identities`
+  - [x] `Green's identities`
   - [ ] `harmonicos_esfericos`
   - [ ] `modelo global do campo de gravidade`
   - [ ] `modelo global do campo geomagnético principal`
@@ -51,6 +51,6 @@
 * Deconvolução de Euler / Euler Deconvolution
 
 * Transformações de campos potenciais / Potential field transformations
-  - [ ] `upward_continuation_integral`
+  - [x] `upward_continuation_integral`
 
 * Inversão / Inversion
