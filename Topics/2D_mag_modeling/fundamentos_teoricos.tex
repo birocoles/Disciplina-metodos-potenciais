@@ -1,0 +1,246 @@
+\documentclass[10pt,a4paper,final]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[left=4.00cm, right=4.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\begin{document}
+
+\section{Fundamentos teóricos}
+
+Considere um sistema de coordenadas Cartesianas com origem na superfície da Terra e 
+eixo $z$ apontado para baixo (Fig. \ref{fig:sistemas-coordenadas}). 
+Seja $V(x, y, z)$ o potencial magnético escalar produzido, no ponto de 
+observação $(x, y, z)$ (referido ao sistema da fonte, Fig. \ref{fig:sistemas-coordenadas}), 
+por uma fonte 3D com volume $\upsilon$ e direção de magnetização total uniforme. 
+Neste caso $V(x, y, z)$ pode ser escrito da seguinte forma:
+\begin{equation}
+V(x, y, z) = -\nabla U(x, y, z) \cdot \hat{\mathbf{m}} \: ,
+\label{eq:V-potencial-3D}
+\end{equation}
+em que $\hat{\mathbf{m}}$ é um vetor unitário que define a direção de magnetização 
+total da fonte, 
+\begin{equation}
+U(x, y, z) = \gamma_{m} \iiint\limits_{\upsilon} m(x', y', z') \; 
+\frac{1}{r} \; d\upsilon^{\prime} \: ,
+\label{eq:U-potencial-3D}
+\end{equation}
+$\gamma_{m}$ é uma constante, $m(x', y', z')$ é a intensidade de magnetização total 
+no ponto $(x', y', z')$ dentro da fonte, 
+$\nabla$ é o operador gradiente aplicado às coordenadas $x$, $y$ e $z$ do ponto de observação 
+e
+\begin{equation}
+\frac{1}{r} = \frac{1}{\sqrt{(x - x')^{2} + (y - y')^{2} + (z - z')^{2}}} \: .
+\label{eq:inv-dist-3D}
+\end{equation}
+
+O campo de indução magnética produzido pela fonte é definido da seguinte forma:
+\begin{equation}
+\begin{split}
+\mathbf{B}(x, y, z) 
+&= - \nabla V(x, y, z) \\
+&= \mathbf{H}(x, y, z) \cdot \hat{\mathbf{m}} 
+\end{split} \quad ,
+\label{eq:B-inducao-3D}
+\end{equation}
+em que
+\begin{equation}
+\mathbf{H}(x, y, z) = \begin{bmatrix}
+\partial_{xx} U & \partial_{xy} U & \partial_{xz} U \\
+\partial_{xy} U & \partial_{yy} U & \partial_{yz} U \\
+\partial_{xz} U & \partial_{yz} U & \partial_{zz} U
+\end{bmatrix} \quad ,
+\label{eq:H-matrix-3D}
+\end{equation}
+$\partial_{\beta\eta} U \equiv \frac{\partial^{2} U(x, y, z)}{\partial_{\beta}\partial_{\eta}}$,
+$\beta = x, y, z$, $\eta = x, y, z$, são derivadas segundas da função $U(x, y, z)$ 
+(eq. \ref{eq:U-potencial-3D}) em relação as coordenadas $x$, $y$ e $z$ do ponto de observação.
+
+Considere que a fonte é 2D, com extensão infinita na direção $y$ do Sistema da 
+fonte (representado em preto na Fig. \ref{fig:sistemas-coordenadas}). Neste caso, 
+$U(x, y, z)$ (eq. \ref{eq:U-potencial-3D}) é reescrito da seguinte forma:
+\begin{equation}
+U(x, y, z) = \gamma_{m} \iint\limits_{S} m(x', z') 
+\left[ \int\limits_{-\infty}^{+\infty} \frac{1}{\ell} \; dy' \right] dx'dz' \: ,
+\label{eq:U-potencial-3D-limite}
+\end{equation}
+em que $S$ é a área da seção vertical da fonte no plano $x-z$, 
+$m(x', z')$ é a intensidade de magnetização, 
+que varia apenas ao longo dos eixos $x$ e $z$, e
+\begin{equation}
+\frac{1}{\ell} = \frac{1}{\sqrt{(x - x')^{2} + (z - z')^{2}}} \: .
+\label{eq:inv-dist-2D}
+\end{equation}
+Na eq. \ref{eq:U-potencial-3D-limite}, o termo entre colchetes é dado por 
+\begin{equation}
+\int\limits_{-\infty}^{+\infty} \frac{1}{\ell} \; dy' = 
+2 \, \log \frac{1}{\ell} \: .
+\label{eq:limite-2D}
+\end{equation}
+Substituindo o limite acima (eq. \ref{eq:limite-2D}) na equação \ref{eq:U-potencial-3D-limite},
+obtemos 
+\begin{equation}
+\tilde{U}(x, z) = 2 \, \gamma_{m} \iint\limits_{S} m(x', z') 
+\log \frac{1}{\ell} \: dx'dz' \: .
+\label{eq:U-potencial-2D}
+\end{equation}
+Note que a função $U(x, y, z)$ (eq. \ref{eq:U-potencial-3D}) associada a uma fonte magnética 
+3D torna-se a função $\tilde{U}(x, z)$ (eq. \ref{eq:U-potencial-2D}), que varia apenas ao 
+longo dos eixos $x$ e $z$ do sistema de coordenadas da fonte (Fig. \ref{fig:sistemas-coordenadas}).
+Consequentemente, o potencial magnético escalar $V(x, y, z)$ (eq. \ref{eq:V-potencial-3D})
+e a indução magnética $\mathbf{B}(x, y, z)$ (eq. \ref{eq:B-inducao-3D}) tornam-se
+\begin{equation}
+\tilde{V}(x, z) = -\nabla \tilde{U}(x, z) \cdot \hat{\mathbf{m}}
+\label{eq:V-potencial-2D}
+\end{equation}
+e
+\begin{equation}
+\begin{split}
+\tilde{\mathbf{B}}(x, z) 
+&= -\nabla \tilde{V}(x, z) \\
+&= \tilde{\mathbf{H}}(x, z) \cdot \hat{\mathbf{m}}
+\end{split} \quad ,
+\label{eq:B-inducao-2D}
+\end{equation}
+em que 
+\begin{equation}
+\tilde{\mathbf{H}}(x, z) = \begin{bmatrix}
+\partial_{xx} \tilde{U} & 0 & \partial_{xz} \tilde{U} \\
+0 & 0 & 0 \\
+\partial_{xz} \tilde{U} & 0 & \partial_{zz} \tilde{U}
+\end{bmatrix} \: ,
+\label{eq:H-matriz-2D}
+\end{equation}
+e 
+$\partial_{\beta\eta} \tilde{U} \equiv 
+\frac{\partial^{2} \tilde{U}(x, z)}{\partial_{\beta}\partial_{\eta}}$,
+$\beta = x, z$, $\eta = x, z$, são derivadas segundas da função $\tilde{U}(x, z)$ 
+(eq. \ref{eq:U-potencial-2D}) em relação as coordenadas $x$ e $z$ do ponto de observação.
+
+Note que a segunda linha da matriz $\tilde{\mathbf{H}}(x, z)$ (eq. \ref{eq:H-matriz-2D}) 
+é formado por zeros. Isso significa que, no Sistema da fonte (Fig. \ref{fig:sistemas-coordenadas}), 
+a componente $y$ da indução magnética 
+$\tilde{\mathbf{B}}(x, z)$ (eq. \ref{eq:B-inducao-2D}) é nula, ainda que a componente 
+$y$ da magnetização total da fonte seja não nula.
+Para entender esta propriedade, vamos primeiro definir o vetor unitário 
+\begin{equation}
+{\color{red}
+\hat{\mathbf{m}} = \begin{bmatrix}
+\cos I \, \cos D \\
+\cos I \, \sin D \\
+\sin I
+\end{bmatrix}} \: ,
+\label{eq:m-hat-red}
+\end{equation}
+que é definido em função da inclinação ${\color{red} I}$ e da declinação ${\color{red} D}$ da 
+magnetização total da fonte, no Sistema dos dados (Fig. \ref{fig:sistemas-coordenadas}).
+Para obter a magnetização total da fonte no Sistema da fonte, é necessário transformar o 
+vetor unitário ${\color{red} \hat{\mathbf{m}}}$ (eq. \ref{eq:m-hat-red}) no vetor unitário 
+$\hat{\mathbf{m}}$ (eqs. \ref{eq:V-potencial-2D} e \ref{eq:B-inducao-2D}). Esta transformação 
+é dada por:
+\begin{equation}
+\hat{\mathbf{m}} 
+= \hat{\mathbf{m}}_{\parallel} + \hat{\mathbf{m}}_{\bot} \: ,
+\label{eq:m-hat-black}
+\end{equation}
+em que 
+\begin{equation}
+\begin{split}
+\hat{\mathbf{m}}_{\parallel} 
+&= \begin{bmatrix}
+0 & 0 & 0 \\
+-\cos\alpha & \sin\alpha & 0 \\
+0 & 0 & 0
+\end{bmatrix} {\color{red} \hat{\mathbf{m}}} \\
+&= \begin{bmatrix}
+0 \\ -\cos ({\color{red} D} + \alpha) \, \cos {\color{red} I} \\ 0
+\end{bmatrix}
+\end{split}
+\label{eq:m-hat-black-parallel}
+\end{equation}
+é um vetor paralelo à fonte (definido ao longo do eixo $y$ do Sistema da fonte),
+\begin{equation}
+\begin{split}
+\hat{\mathbf{m}}_{\bot} 
+&= \begin{bmatrix}
+\sin\alpha & \cos\alpha & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix} {\color{red} \hat{\mathbf{m}}} \\
+&= \begin{bmatrix}
+\sin ({\color{red} D} + \alpha) \, \cos {\color{red} I} \\
+0 \\ \sin {\color{red} I}
+\end{bmatrix}
+\end{split}
+\label{eq:m-hat-black-orthogonal}
+\end{equation}
+é perpendicular à fonte 2D (no Sistema da fonte) e 
+$\alpha$ é o azimute da fonte 2D (Fig. \ref{fig:sistemas-coordenadas}).
+Uma expressão alternativa pode ser obtida em função do ângulo $\theta$ 
+(Fig. \ref{fig:sistemas-coordenadas}).
+Utilizando as eqs. \ref{eq:m-hat-black}--\ref{eq:m-hat-black-orthogonal},
+é possível reescrever a indução magnética $\tilde{\mathbf{B}}(x, z)$
+(eq. \ref{eq:B-inducao-2D}) da seguinte forma:
+\begin{equation}
+\tilde{\mathbf{B}}(x, z) =
+\tilde{\mathbf{H}}(x, z) \cdot \hat{\mathbf{m}}_{\parallel} +
+\tilde{\mathbf{H}}(x, z) \cdot \hat{\mathbf{m}}_{\bot}
+\label{eq:B-inducao-2D-split} \quad .
+\end{equation}
+Como a segunda linha da matriz $\tilde{\mathbf{H}}(x, z)$ (eq. \ref{eq:H-matriz-2D}) 
+é formada por zeros, o termo que depende de $\hat{\mathbf{m}}_{\parallel}$ (eq. \ref{eq:m-hat-black-parallel})
+da eq. \ref{eq:B-inducao-2D-split} é igual ao vetor nulo. Portanto, a indução magnética 
+$\tilde{\mathbf{B}}(x, z)$ produzida pela fonte 2D, no Sistema da fonte (Fig. \ref{fig:sistemas-coordenadas}),
+é dada por
+\begin{equation}
+\tilde{\mathbf{B}}(x, z) =
+\tilde{\mathbf{H}}(x, z) \cdot \hat{\mathbf{m}}_{\bot} \: ,
+\label{eq:B-inducao-2D-simplified}
+\end{equation}
+em que $\hat{\mathbf{m}}_{\bot}$ (eq. \ref{eq:m-hat-black-orthogonal}) define a componente 
+da magnetização perpendicular à fonte. Note que $\hat{\mathbf{m}}_{\bot}$ depende
+do azimute $\alpha$ da fonte, bem como da inclinação ${\color{red} I}$ e da declinação
+${\color{red} D}$ de sua magnetização total, ambas definidas no Sistema dos dados
+(Fig. \ref{fig:sistemas-coordenadas}).
+
+As equações \ref{eq:m-hat-black}--\ref{eq:m-hat-black-orthogonal} relacionam 
+os vetores ${\color{red} \hat{\mathbf{m}}}$ (eq. \ref{eq:m-hat-red}) e 
+$\hat{\mathbf{m}}$ (eqs. \ref{eq:V-potencial-2D} e \ref{eq:B-inducao-2D}), que são 
+definidos, respectivamente, no Sistema dos dados e da fonte (Fig. \ref{fig:sistemas-coordenadas}).
+Da mesma forma, é possível estabelecer uma relação entre a indução magnética $\tilde{\mathbf{B}}(x, z)$
+(eqs. \ref{eq:B-inducao-2D}, \ref{eq:B-inducao-2D-split} e \ref{eq:B-inducao-2D-simplified}),
+definida no Sistema da fonte, e a indução magnética ${\color{red} \mathbf{B}(x, y, z)}$,
+definida no Sistema dos dados. Esta relação é dada por:
+\begin{equation}
+\tilde{\mathbf{B}}(x, z) = 
+\begin{bmatrix}
+\sin\alpha & \cos\alpha & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 1 \end{bmatrix} \, {\color{red} \mathbf{B}(x, y, z)} +
+\begin{bmatrix}
+0 & 0 & 0 \\
+-\cos\alpha & \sin\alpha & 0 \\
+0 & 0 & 0 \end{bmatrix} \, {\color{red} \mathbf{B}(x, y, z)} \quad ,
+\label{eq:B-tilde-B-red}
+\end{equation}
+em que o primeiro termo do lado direito representa a componente da indução magnética 
+perpendicular e o segundo termo é a componente paralela à fonte 2D.
+É importante ressaltar que a indução magnética ${\color{red} \mathbf{B}(x, y, z)}$ 
+produzida pela fonte 2D, no Sistema dos dados, não possui nenhuma componente nula.
+Já a indução $\tilde{\mathbf{B}}(x, z)$ produzida pela fonte 2D no Sistema da fonte
+possui a componente $y$ nula.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{sistemas-coordenadas}
+	\caption{Sistemas de coordenadas Cartesianas da fonte (em preto) e dos dados (em vermelho).
+		Ambos os sistemas possuem eixo $z$ apontado para o interior 
+		da Terra (em direção ao plano da folha/tela). A origem deste sistema está localizada sobre uma fonte magnética 2D, cuja projeção no plano horizontal está representada em cinza. Esta fonte tem azimute $\alpha$ (positivo no sentido horário).}
+	\label{fig:sistemas-coordenadas}
+\end{figure}
+
+
+\end{document}
