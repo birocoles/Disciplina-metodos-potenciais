@@ -26,6 +26,7 @@
   - [x] `Newtonian_potential`
   - [x] `Divergence and Gauss' theorems`
   - [x] `Green's identities`
+  - [x] `Applications of Green's identities`
   - [ ] `harmonicos_esfericos`
   - [ ] `modelo global do campo de gravidade`
   - [ ] `modelo global do campo geomagnético principal`
@@ -51,6 +52,7 @@
 * Deconvolução de Euler / Euler Deconvolution
 
 * Transformações de campos potenciais / Potential field transformations
-  - [x] `upward_continuation_integral`
+  - [x] `Applications of Dirichlet problem on a plane`
+  - [ ] `Applications of Neumann's problem on a plane`
 
 * Inversão / Inversion
