@@ -1,4 +1,4 @@
-## Aulas
+## Aulas / Classes
 
 * Sistemas de Coordenadas / Coordinate systems
   - [ ] `Sistemas_coordenadas_A`
@@ -6,41 +6,35 @@
   - [ ] [Implementação computacional / Computational implementation](https://github.com/birocoles/coordinates)
 
 * Campo de gravidade da Terra / Gravity field of the Earth
-  - [ ] `Campo_gravidade_A`
-  - [ ] `gravity_variations`
+  - [x] `Campo_gravidade_A`
+  - [ ] `gravidade_normal`
   - [ ] `heights`
   - [ ] `classical_gravity_anomalies`
-  - [ ] `gravidade_normal`
-  - [ ] `centrifugal_aceleration`
+  - [ ] `correcao_eotvos`
 
 * Campo magnético da Terra / Magnetic field of the Earth
   - [ ] `Campo_geomagnetico_A`
   - [ ] `anomalia_campo_total`
 
 * Elementos de teoria do potencial / Elements of potential theory
+  - [ ] `harmonicos_esfericos`
   - [ ] `inverse_distance`
-  - [ ] `dipolo`
   - [ ] `point_mass`
+  - [ ] `dipolo`
   - [ ] `3D_sources`
   - [ ] `Poisson's Relation`
   - [ ] `Newtonian_potential`
   - [ ] `Divergence and Gauss' theorems`
   - [ ] `Green's identities`
   - [ ] `Applications of Green's identities`
-  - [ ] `harmonicos_esfericos`
   - [ ] `modelo global do campo de gravidade`
   - [ ] `modelo global do campo geomagnético principal`
 
-* Gravimetria / Gravimetry
-  - [ ] `correcao_eotvos`
-
-* Magnetometria / Magnetometry
-
 * Modelagem direta / Forward modeling
-  - [ ] `magnetic_modeling_A`
-  - [ ] `magnetic_modeling_B`
   - [ ] `gravity_modeling_A`
   - [ ] `gravity_modeling_B`
+  - [ ] `magnetic_modeling_A`
+  - [ ] `magnetic_modeling_B`
   - [ ] `sphere`
   - [ ] `ellipsoid`
   - [ ] `rectangular prism`

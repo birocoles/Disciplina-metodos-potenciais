@@ -66,7 +66,7 @@ void main () {
 
 	/******** <== leitura do arquivo de input **************/
 
-	/******** leitura do arquivo dos coeficientes de Gaus ==> **************/
+	/******** leitura do arquivo dos coeficientes de Gauss ==> **************/
 
 	sprintf (str, "IGRF2005.txt", "r");
 
@@ -265,10 +265,10 @@ void schmidt_norm_pnm (int grau, double colatitude, double **pnm) {
 	/* Relação de recorrência para o cálculo dos harmônicos
 	esféricos plenamente normalizados ==> */
 
-    /* Harmônico p00 */
+    	/* Harmônico p00 */
 	pnm[0][0] = 1.0;
 
-    /* Harmônico p10 */
+    	/* Harmônico p10 */
 	pnm[1][0] = cosseno*pow(3, 0.5);
 
 	/* Harmônico p11 */
@@ -278,11 +278,11 @@ void schmidt_norm_pnm (int grau, double colatitude, double **pnm) {
 	pnm[2][0] = (3*cosseno*cosseno) - 1.0;
 	pnm[2][0] *= pow(1.25, 0.5);
 
-    /* Harmônico p21 */
-    pnm[2][1] = pow(15.0, 0.5)*cosseno*seno;
+    	/* Harmônico p21 */
+    	pnm[2][1] = pow(15.0, 0.5)*cosseno*seno;
 
-    /* Harmônico p22 */
-    pnm[2][2] = pow(3.75, 0.5)*seno*seno;
+    	/* Harmônico p22 */
+    	pnm[2][2] = pow(3.75, 0.5)*seno*seno;
 
 	for(i = 3; i <= grau; i++) {
 
@@ -295,7 +295,7 @@ void schmidt_norm_pnm (int grau, double colatitude, double **pnm) {
 		/* Harmônicos pnn-1 */
 		pnm[i][i-1] = aux0*cosseno*pnm[i-1][i-1];
 
-        /* Harmônicos pnn-2, pnn-3, pnn-4, ..., pn0 */
+        	/* Harmônicos pnn-2, pnn-3, pnn-4, ..., pn0 */
 		aux2 = pow(((2*i) - 1.0), 0.5);
 		aux3 = pow(((2*i) - 3.0), 0.5);
 
