@@ -1,5 +1,6 @@
 # Pasta criada pelo IPython Notebook
 .ipynb_checkpoints/
+.virtual_documents
 
 # Tex files
 *.synctex.gz
