@@ -3,6 +3,8 @@
 Disciplina eletiva oferecida no [Programa de Pós-Graduação em
 Geofísica](http://www.on.br/index.php/pt-br/programas-academicos/geofisica.html) do [Observatório Nacional](http://www.on.br).
 
+A ementa pode ser consultada [aqui](https://www.gov.br/observatorio/pt-br/assuntos/programas-academicos/pos-graduacao-em-geofisica/ementas/metodos-potenciais).
+
 **Responsável**: [Vanderlei C. Oliveira Jr.](http://www.pinga-lab.org/people/oliveira-jr.html)
 
 **Aviso Legal:** O material disponibilizado neste repositório está em constante desenvolvimento e o Observatório Nacional não tem nenhuma responsabilidade sobre o seu conteúdo.
